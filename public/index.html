@@ -45,7 +45,7 @@
 						<div class="jumbotron">
 							
 						<h1 class="h1"> 
-							<span class="pki n{{selectedPokemon.number}} pull-left"></span>{{ selectedPokemon.name }}</h1>
+							<img src="img/sprites/m/{{ selectedPokemon.number }}.png" alt="{{ selectedPokemon.name }}">{{ selectedPokemon.name }}</h1>
 						</div>
 					</div>
 				</div>
@@ -136,6 +136,56 @@
 											{{ selectedPokemon.baseStats[5] }}
 											</div>
 										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								Learned Moves
+							</div>
+
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-12">
+										<table class="table">
+											<thead>
+												<tr>
+													<td>Level</td>
+													<td>Name</td>
+												</tr>
+											</thead>
+											<tbody>
+												<tr ng-repeat="move in selectedPokemon.learnedMoves track by $index">
+													<td>
+														{{ move.slice(move.indexOf('(')+1, move.indexOf(')')) }}
+													</td>
+													<td>{{ move.slice(0, move.indexOf('(')) }}</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								Abilities
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-12">
+										<ul class="list-group">
+											<li class="list-group-item" ng-repeat="ability in selectedPokemon.abilities">
+												{{ ability }}
+											</li>
+										</ul>
 									</div>
 								</div>
 							</div>
