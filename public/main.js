@@ -1,10 +1,13 @@
-var app = angular.module('Pokestats', function() {
-	app.controller('PokemonCtrl', ['$scope', function($scope){
-		$scope.pokemons = $http({
-			method: 'GET',
-			url: 'data/poke.json'
-		}).success(function(data, status, headers, config) {
-			console.log(data);
-		})
-	}])
-})
+var app = angular.module('Pokestats', []);
+
+app.controller('PokemonCtrl', ['$scope', '$http', function($scope, $http){
+	$scope.pokemons = '';
+	$scope.types = '';
+	$http({
+		method: 'GET',
+		url: 'data/pokemon.json'
+	}).success(function(data, status, headers, config) {
+		$scope.pokemons = data;
+		
+	})
+}])
