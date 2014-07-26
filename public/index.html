@@ -10,7 +10,7 @@
 </head>
 <body ng-app="Pokestats" ng-controller="PokemonCtrl">
 	<div class="container">
-		
+		<superman></superman>
 		<div class="row">
 			
 			<div class="col-md-3">
@@ -20,12 +20,114 @@
 					<input type="text" class="form-control" ng-model="search.name">
 				</div>
 				<ul class="list-group">
-					<li class="list-group-item" ng-repeat="pokemon in pokemons | orderBy:'number' | filter:search"> 
+					<li class="list-group-item" pokemon ng-repeat="pokemon in pokemons | orderBy:'number' | filter:search"> 
 						<span class="badge"> {{ pokemon.number }} </span>
 						<span class="name"> {{ pokemon.name }}</span>
 						<span class="pki n{{pokemon.number}} pull-left"></span>
 					</li>
 				</ul>
+			</div>
+			<div class="col-md-9">
+				<div class="row">
+					<div class="col-md-12">
+						
+						<h1 class="h1"> 
+							<span class="pki n{{selectedPokemon.number}} pull-left"></span>{{ selectedPokemon.name }}</h1>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								Base Stats
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-3">
+										<strong>HP</strong>
+									</div>
+									<div class="col-md-9">
+										
+										<div class="progress">
+											<div class="progress-bar progress-bar-success" style="width: {{ selectedPokemon.baseStats[0] / 255 * 100 | number:0 }}%;">
+											{{ selectedPokemon.baseStats[0] }}
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-3">
+										<strong>Atk</strong>
+									</div>
+									<div class="col-md-9">
+										
+										<div class="progress">
+											<div class="progress-bar progress-bar-success" style="width: {{ selectedPokemon.baseStats[1] / 255 * 100 | number:0 }}%;">
+											{{ selectedPokemon.baseStats[1] }}
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-3">
+										<strong>Def</strong>
+									</div>
+									<div class="col-md-9">
+										
+										<div class="progress">
+											<div class="progress-bar progress-bar-success" style="width: {{ selectedPokemon.baseStats[2] / 255 * 100 | number:0 }}%;">
+											{{ selectedPokemon.baseStats[2] }}
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-3">
+										<strong>Sp.Atk</strong>
+									</div>
+									<div class="col-md-9">
+										
+										<div class="progress">
+											<div class="progress-bar progress-bar-success" style="width: {{ selectedPokemon.baseStats[3] / 255 * 100 | number:0 }}%;">
+											{{ selectedPokemon.baseStats[3] }}
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-3">
+										<strong>Sp.Def</strong>
+									</div>
+									<div class="col-md-9">
+										
+										<div class="progress">
+											<div class="progress-bar progress-bar-success" style="width: {{ selectedPokemon.baseStats[4] / 255 * 100 | number:0 }}%;">
+											{{ selectedPokemon.baseStats[4] }}
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-3">
+										<strong>Spd</strong>
+									</div>
+									<div class="col-md-9">
+										
+										<div class="progress">
+											<div class="progress-bar progress-bar-success" style="width: {{ selectedPokemon.baseStats[5] / 255 * 100 | number:0 }}%;">
+											{{ selectedPokemon.baseStats[5] }}
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		
