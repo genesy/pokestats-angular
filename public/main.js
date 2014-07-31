@@ -1,9 +1,10 @@
 var app = angular.module('Pokestats', []);
 
-app.controller('PokemonCtrl', ['$scope', '$http', function($scope, $http){
-	$scope.pokemons = '';
+app.controller('PokemonCtrl', ['$scope', '$http', 'socket', function($scope, $http, socket){
+	$scope.pokemons = [];
 	$scope.moves = '';
 	$scope.ability = '';
+	$scope.selectedPokemon =[];
 	$scope.types = [
 		"Normal",
 		"Fire",
@@ -25,35 +26,37 @@ app.controller('PokemonCtrl', ['$scope', '$http', function($scope, $http){
 		"Fairy"
 	];
 
-	$http({
-		method: 'GET',
-		url: 'data/pokemon.json'
-	}).success(function(data, status, headers, config) {
-		$scope.pokemons = data;
-		$scope.selectedPokemon = $scope.pokemons[0];
-		console.log($scope.pokemons[0]);
-	})
-
-	$http({
-		method: 'GET',
-		url: 'data/move.json'
-	}).success(function(data) {
-		$scope.moves = data;
-	});
-
-	$http({
-		method: 'GET',
-		url: 'data/ability.json'
-	}).success(function(data) {
-		$scope.ability = data;
-	});
 
 	$scope.selectPokemon = function(pokemon) {
-		$scope.selectedPokemon = pokemon;
-		$scope.$apply();
+		console.log(pokemon);
+		socket.emit("getPokemon", pokemon)
 	}
 
+	socket.on("returnPokemon", function( data ){
+		data = JSON.parse(data);
+		console.log(data);
+		$scope.selectedPokemon = data;
+	});
+
+	socket.on("get_all_pokemons", function( data ) {
+		for (var property in data) {
+			prop = data[property];
+			$scope.pokemons.push(JSON.parse(prop));
+			prop = JSON.parse(prop);
+			if(prop.number==1) {
+				$scope.selectedPokemon = prop;
+				// console.log(prop);
+				// $scope.selectPokemon(prop);
+			}
+		}
+		// $scope.selectedPokemon = $scope.pokemons[0];
+	})
 }])
+
+
+// app.config(['$routeProvider',function($routeProvider) {
+// 	// $routeProvider.when('/pokemon/:')
+// }])
 
 app.directive('pokemon', function(){
 	return {
@@ -76,4 +79,33 @@ app.filter('regex', function() {
 		}
 		return out;
 	};
+});
+
+
+app.factory('io', function ($rootScope) {
+	return io;
+});
+
+app.factory('socket', function ($rootScope) {
+  var socket = io.connect();
+  return {
+    on: function (eventName, callback) {
+      socket.on(eventName, function () {  
+        var args = arguments;
+        $rootScope.$apply(function () {
+          callback.apply(socket, args);
+        });
+      });
+    },
+    emit: function (eventName, data, callback) {
+      socket.emit(eventName, data, function () {
+        var args = arguments;
+        $rootScope.$apply(function () {
+          if (callback) {
+            callback.apply(socket, args);
+          }
+        });
+      })
+    }
+  };
 });

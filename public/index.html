@@ -5,7 +5,10 @@
 	<title>Pokestats V2</title>
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
 	<link rel="stylesheet" href="css/pkmn-icons.css">
+	<script src="socket.io/socket.io.js"></script>
+
 	<script src="bower_components/angularjs/angular.min.js"></script>
+	<script src="bower_components/angular-route/angular-route.min.js"></script>
 	<script src="main.js"></script>
 	<style>
 	body {
@@ -22,7 +25,7 @@
 			</div>
 		</div>
     </div>
-	<div class="container">
+	<div class="container-fluid">
 		<div class="row">
 			
 			<div class="col-md-3">
@@ -154,8 +157,8 @@
 										<table class="table">
 											<thead>
 												<tr>
-													<td>Level</td>
-													<td>Name</td>
+													<th>Level</th>
+													<th>Name</th>
 												</tr>
 											</thead>
 											<tbody>
