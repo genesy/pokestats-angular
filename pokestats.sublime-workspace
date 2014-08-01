@@ -1,0 +1,1155 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"chat",
+				"chatBarMessages"
+			],
+			[
+				"console",
+				"console.	console.log()"
+			],
+			[
+				"companyId",
+				"company_id"
+			],
+			[
+				"slee2",
+				"select2"
+			],
+			[
+				"first",
+				"first-child"
+			],
+			[
+				"tal",
+				"tal-l	text-align-last: left;"
+			],
+			[
+				"photo",
+				"photo-width"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 68.0,
+		"selected_items":
+		[
+			[
+				"proje save",
+				"Project: Save As"
+			],
+			[
+				"proje",
+				"File: New File Relative to Project Root"
+			],
+			[
+				"co tabs",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"default",
+				"Preferences: Settings - Default"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"user",
+				"Preferences: Settings - User"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove ",
+				"Package Control: Remove Package"
+			],
+			[
+				"git pull",
+				"Git: Pull Current Branch"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"git pu",
+				"Git: Pull"
+			],
+			[
+				"git status",
+				"Git: Status"
+			],
+			[
+				"git pul",
+				"Git: Pull"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"keyb",
+				"Preferences: Key Bindings - Default"
+			],
+			[
+				"git pull ",
+				"Git: Pull Current Branch"
+			],
+			[
+				"git ",
+				"Git: Status"
+			],
+			[
+				"remove c",
+				"Package Control: Remove Package"
+			],
+			[
+				"syn angu",
+				"Set Syntax: HTML (Angular.js)"
+			],
+			[
+				"rename",
+				"File: Rename"
+			],
+			[
+				"pull",
+				"Git: Pull"
+			],
+			[
+				"git statu",
+				"Git: Status"
+			],
+			[
+				"git open",
+				"Git: Open..."
+			],
+			[
+				"git",
+				"Git: Pull"
+			],
+			[
+				"git pull us",
+				"Git: Pull Using Rebase"
+			],
+			[
+				"git comm",
+				"Git: Commit"
+			],
+			[
+				"package remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"git co",
+				"Git: Commit history"
+			],
+			[
+				"remove pa",
+				"Package Control: Remove Package"
+			],
+			[
+				"git: pull",
+				"Git: Pull"
+			],
+			[
+				"git:",
+				"Git: Init"
+			],
+			[
+				"git se",
+				"Github: Plugin Settings"
+			],
+			[
+				"javasc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"delet",
+				"File: Delete"
+			],
+			[
+				"blade",
+				"Set Syntax: PHP - Laravel Blade"
+			],
+			[
+				"copy nam",
+				"File: Copy Name"
+			],
+			[
+				"delete",
+				"File: Delete"
+			],
+			[
+				"dl",
+				"File: Delete"
+			],
+			[
+				"larava",
+				"Set Syntax: PHP - Laravel Blade"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"scss",
+				"Set Syntax: SCSS"
+			]
+		],
+		"width": 458.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"git",
+			"git pull origin master",
+			"git status",
+			"git pull origin master",
+			"git pull",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/My Projects/mrs/public/js/chat.js",
+		"/C/Users/Gene Sy/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/D/My Projects/mrs/public/sass/formbuilder.scss",
+		"/D/My Projects/mrs/app/filters.php",
+		"/D/My Projects/mrs-node/main.js",
+		"/D/My Projects/mrs/mrs.sublime-project",
+		"/D/My Projects/mrs/app/views/admin/assignedLocation/listing.blade.php",
+		"/C/Users/Gene Sy/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/D/My Projects/mrs/public/sass/_list.scss",
+		"/D/My Projects/mrs/app/routing/admin.php",
+		"/D/My Projects/mrs/public/js/admin.js",
+		"/D/My Projects/mrs/public/js/module/company/view.js",
+		"/D/My Projects/mrs/app/views/layout/topbar/company-logo.blade.php",
+		"/D/My Projects/mrs/public/js/core.js",
+		"/D/My Projects/mrs/app/views/signup/manager.blade.php",
+		"/D/My Projects/mrs-node/vagrant/.vagrant/machines/default/virtualbox/action_provision",
+		"/D/My Projects/mrs/app/views/pages/admin/company/edit/phone/create.blade.php",
+		"/D/My Projects/mrs/app/views/pages/admin/company/manage/employee/edit.blade.php",
+		"/D/My Projects/mrs/public/js/jqueryui-editable.min.js",
+		"/D/My Projects/mrs/db/update/20140723/employee_allowed_day.sql",
+		"/D/My Projects/mrs/app/models/Email.php",
+		"/D/My Projects/mrs/app/models/PrimaryInformation.php",
+		"/D/My Projects/mrs/public/js/jquery.maskedinput.min.js",
+		"/D/My Projects/mrs/app/database/production.sqlite",
+		"/D/My Projects/mrs/package.json",
+		"/C/Users/Gene Sy/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/D/My Projects/mrs/app/routing/user-my_zipcode_coverage_area.php",
+		"/D/My Projects/mrs/app/views/layout/chat.php",
+		"/D/My Projects/mrs/app/controllers/UserMyZipCodeCoverageAreaController.php",
+		"/D/My Projects/mrs/app/views/layout/base2.blade.php",
+		"/D/My Projects/mrs/app/config/local/gene/database.php",
+		"/D/My Projects/mrs-node/global_announcement.js",
+		"/D/My Projects/mrs/public/sass/_chatbar.scss",
+		"/D/My Projects/mrs/db/static/static-zip.sql",
+		"/D/My Projects/mrs/app/controllers/ZipCodeController.php",
+		"/D/My Projects/mrs/app/models/ZipCode.php",
+		"/D/My Projects/mrs/app/views/layout/navbar/items/admin-dashboard.blade.php",
+		"/D/My Projects/mrs/artisan",
+		"/D/My Projects/mrs/app/views/pages/sections/what.blade.php",
+		"/D/My Projects/mrs/public/js/chat.js.bak.js",
+		"/D/My Projects/mrs/app/models/UserMyZipCodeCoverageAreaModel.php",
+		"/D/My Projects/mrs-node/npm-debug.log",
+		"/D/My Projects/mrs/app/config/local/gene/cache.php",
+		"/D/My Projects/mrs/app/config/database.php",
+		"/D/My Projects/mrs/public/sass/_chat.scss",
+		"/D/My Projects/mrs/public/sass/style.scss",
+		"/D/My Projects/mrs/app/config/app.php",
+		"/D/My Projects/mrs/app/routing/admin-press.php",
+		"/D/My Projects/mrs/mrs.sql",
+		"/D/My Projects/gene-redis/Vagrantfile",
+		"/D/My Projects/mrs-node/vagrant/Vagrantfile",
+		"/D/My Projects/mrs-node/vagrant/init.sh",
+		"/C/Users/Gene Sy/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/D/My Projects/mrs/app/config/cache.php",
+		"/D/My Projects/mrs/app/config/local/gene/session.php",
+		"/D/My Projects/mrs/public/sass/_global.scss",
+		"/D/My Projects/mrs-node/index.html",
+		"/D/My Projects/mrs-node/vagrant/redis.conf",
+		"/D/My Projects/mrs/app/start/global.php",
+		"/D/My Projects/mrs/public/js/notifications.js",
+		"/D/My Projects/mrs/app/config/packages/aws/aws-sdk-php-laravel/config.php",
+		"/D/My Projects/mrs/config.rb",
+		"/D/My Projects/mrs/readme.md",
+		"/D/My Projects/mrs/app/views/bootstrap.blade.php",
+		"/D/My Projects/mrs/public/packages/barryvdh/laravel-debugbar/laravel-debugbar.css",
+		"/D/My Projects/mrs/public/js/noty/layouts/bottomLeft.js",
+		"/D/My Projects/mrs/db/backup.sql",
+		"/D/My Projects/mrs/app/config/local/jham/session.php",
+		"/D/My Projects/mrs/app/start/local.php",
+		"/D/My Projects/mrs/app/controllers/LoginController.php",
+		"/D/My Projects/mrs/app/routing/user.php",
+		"/D/My Projects/mrs/app/routing/user-employee.php",
+		"/D/My Projects/mrs/app/routing/user-serviceprovider.php",
+		"/D/mrs-node/main.js",
+		"/D/mrs/app/config/database.php",
+		"/D/mrs/db/deploy.bat",
+		"/D/mrs/app/models/CompanyAccount.php",
+		"/D/mrs/public/js/core.js",
+		"/D/mrs/app/lang/en/reminders.php",
+		"/D/mrs/public/js/jqueryui-editable.min.js",
+		"/D/mrs/readme.md",
+		"/D/mrs/app/config/cache.php",
+		"/D/mrs/app/config/local/gene/app.php",
+		"/D/mrs/public/js/user/password-gen.js",
+		"/D/mrs/app/views/signup/manager.blade.php",
+		"/D/mrs/public/sass/_global.scss",
+		"/D/mrs/app/config/packages/aws/aws-sdk-php-laravel/config.php",
+		"/D/mrs/config.rb",
+		"/D/mrs/app/start/global.php",
+		"/D/mrs/Gulpfile.js",
+		"/D/mrs/bootstrap/start.php",
+		"/D/mrs/server.php",
+		"/D/mrs/public/js/notifications.js",
+		"/D/mrs/public/js/chat.js.bak.js",
+		"/D/mrs/public/sass/_chatbar.scss",
+		"/D/mrs/app/views/admin/assignedLocation/listing.blade.php",
+		"/D/mrs/app/views/layout/base2.blade.php",
+		"/D/mrs/public/js/chat.js",
+		"/D/mrs/app/views/user/index.blade.php",
+		"/D/mrs/app/views/layout/topbar/company-logo.blade.php",
+		"/D/mrs/public/sass/_header.scss",
+		"/D/mrs/public/sass/bootstrap/_thumbnails.scss",
+		"/D/mrs/public/sass/bootstrap/_tooltip.scss",
+		"/D/mrs/public/sass/bootstrap/_tables.scss",
+		"/D/mrs/public/sass/bootstrap/_theme.scss",
+		"/D/mrs/public/sass/bootstrap/_type.scss",
+		"/D/mrs/public/sass/bootstrap/_print.scss",
+		"/D/mrs/public/sass/_bootstrap-mrs.scss",
+		"/D/mrs/public/sass/bootstrap/_bootstrap.scss",
+		"/D/mrs/public/sass/bootstrap.scss",
+		"/D/mrs/public/js/bootstrap.js",
+		"/D/mrs/public/sass/_chat.scss",
+		"/D/mrs/app/config/packages/frozennode/xssinput/xssinput.php",
+		"/D/mrs/app/views/index.blade.php",
+		"/D/mrs-node/index.html",
+		"/D/mrs/app/controllers/CompanyController.php",
+		"/D/mrs/app/views/user/partials/changes/address.blade.php",
+		"/D/mrs/app/routing/user.php",
+		"/D/mrs/app/routing/user-serviceprovider.php",
+		"/D/mrs/app/libraries/helpers.php",
+		"/D/mrs/app/models/Company.php",
+		"/D/mrs/composer.json",
+		"/D/mrs/app/controllers/BaseController.php",
+		"/D/mrs/db/backup.sql",
+		"/D/mrs/app/breadcrumbs.php",
+		"/D/mrs/public/sass/_list.scss",
+		"/D/mrs/app/start/local.php",
+		"/D/mrs/app/views/layout/chat.blade.php"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 407.0,
+		"where_history":
+		[
+			"*.css",
+			"*.scss",
+			"",
+			"*.js",
+			"",
+			"D:\\mrs\\app\\views",
+			"D:\\mrs\\public\\sass",
+			"D:\\mrs\\app\\views",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"window",
+			"dropdown",
+			".highlight",
+			"yellow",
+			"$yellow",
+			"false",
+			"true",
+			"false",
+			"ftalse",
+			"selection",
+			"solid",
+			"blink",
+			"phase",
+			"smooth",
+			"caret",
+			"$doc",
+			"obj",
+			"dropdown",
+			".statu",
+			"ystat",
+			".status-",
+			"primary",
+			"global",
+			"active",
+			"post",
+			"click",
+			"hset",
+			"getChat",
+			"SOME",
+			"something",
+			"updateChat",
+			"nop",
+			"makeRoom",
+			"console.log",
+			"getChat",
+			"updatechat",
+			"getChat",
+			"getchat",
+			"Rooms",
+			"userArray",
+			"console.log",
+			"96",
+			"getChat(",
+			"getChat",
+			"getChat(",
+			"users",
+			"getChat",
+			"socket",
+			"room",
+			"socket",
+			"room",
+			"socket",
+			"sendmessage",
+			"data",
+			"User.id.toString()",
+			"userArray",
+			"data",
+			"list",
+			"online",
+			"redis-cli",
+			"redis",
+			"'",
+			"data",
+			"\\\n",
+			"\\n",
+			"\\t",
+			"10000",
+			"forea",
+			"debug",
+			"var",
+			"6379,'192.168.11.47')",
+			"--",
+			"192",
+			"redis",
+			"127.0.0.1",
+			"redis",
+			"info",
+			"message",
+			"sendMessage",
+			"client",
+			"redis.createClient(6379,'192.168.11.47')",
+			"--",
+			"io",
+			" redis.createClient();",
+			"$scope",
+			"chatBox",
+			"from",
+			".row",
+			"Name",
+			".company-logo-main",
+			"script",
+			"this",
+			"room",
+			"ds",
+			"http://localhost:3000",
+			"http://localhost:3000/",
+			"http://localhost:3000",
+			"con",
+			"black",
+			"github",
+			"wa",
+			"var User",
+			"show",
+			"top",
+			"25px",
+			"show",
+			"25px",
+			"span",
+			"div",
+			"25px",
+			"35px",
+			"left",
+			"chatbox",
+			"222",
+			"fff",
+			"left",
+			"chatbar-h",
+			"company-name",
+			".title",
+			"<td class=\"title\" colspan=\"9\">\n								<div class=\"msgbox cm<?php echo $countmsg;?>\">\n									<table class=\"tablemsg\" align=\"left\">\n										<tr>\n											<td class=\"labelmsg\" width=\"100\">---</td>\n											<td class=\"labelmsg2\" width=\"\">---</td>\n										</tr>\n									</table>\n								</div>\n								<div>\n									\n								</div>\n								<div>\n									",
+			"	<td class=\"title\" width=\"100\"></td>\n							<td class=\"title\" width=\"100\"></td>\n							<td class=\"title\" width=\"200\"><a href=\"#\"><?php echo $datamsg->country;?></a></td>\n							<td class=\"title\" width=\"200\"><a href=\"#\"><?php echo $datamsg->state;?></a></td>\n							<td class=\"title\" width=\"100\"><?php echo $datamsg->zipcode;?></td>\n							<td class=\"title\"></td>\n							<td class=\"title\" width=\"250\"><?php echo date(\"F d, Y - h:i A\",strtotime($datamsg->date_created));?></td>\n							<td class=\"control\" width=\"20\"></td>\n							<td class=\"control\" width=\"20\" align=\"center\">\n							</td>\n						</tr>",
+			"setColor",
+			"2",
+			"state",
+			"Something",
+			"Alaska",
+			"zipcodecity",
+			"Chat"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"form-control show-on-edit",
+			"class=\"mrs-fieldset\"",
+			"class=\"btn btn-mrs\"",
+			"../images/",
+			" class=\"new-info\"",
+			" style=\"new-info\"",
+			"{{ URL::route('public.home') }}",
+			"",
+			" ",
+			"",
+			"$(\"#top\")",
+			"$(document)",
+			"$(window)"
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 36.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 120.0
+	},
+	"output.git-pull":
+	{
+		"height": 0.0
+	},
+	"output.git-push":
+	{
+		"height": 0.0
+	},
+	"project": "pokestats.sublime-project",
+	"replace":
+	{
+		"height": 68.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"chaat.js",
+				"mrs\\public\\js\\chat.js.bak.js"
+			],
+			[
+				"admin.js",
+				"mrs\\public\\js\\admin.js"
+			],
+			[
+				"listing",
+				"mrs\\app\\views\\admin\\company\\listing.blade.php"
+			],
+			[
+				"listin",
+				"mrs\\app\\views\\admin\\assignedLocation\\listing.blade.php"
+			],
+			[
+				"formele",
+				"mrs\\public\\sass\\_form-elements.scss"
+			],
+			[
+				"manage.scss",
+				"mrs\\public\\sass\\pages\\company\\_manage.scss"
+			],
+			[
+				"list.blade.php",
+				"mrs\\app\\views\\pages\\admin\\company\\list.blade.php"
+			],
+			[
+				"core.js",
+				"mrs\\public\\js\\core.js"
+			],
+			[
+				"companyviewb",
+				"mrs\\app\\views\\admin\\company\\view.blade.php"
+			],
+			[
+				"managscss",
+				"mrs\\public\\sass\\pages\\company\\_manage.scss"
+			],
+			[
+				"manage.bla",
+				"mrs\\app\\views\\layout\\navbar\\admin\\manage.blade.php"
+			],
+			[
+				"priambla",
+				"mrs\\app\\views\\admin\\partials\\primary-information.blade.php"
+			],
+			[
+				"priamry",
+				"mrs\\app\\models\\PrimaryInformation.php"
+			],
+			[
+				"chatphp",
+				"mrs\\app\\views\\layout\\chat.php"
+			],
+			[
+				"zip",
+				"mrs\\app\\routing\\user-my_zipcode_coverage_area.php"
+			],
+			[
+				"chat.php",
+				"mrs\\app\\views\\layout\\chat.php"
+			],
+			[
+				"adminjs",
+				"mrs\\public\\js\\admin.js"
+			],
+			[
+				"core",
+				"mrs\\public\\js\\core.js"
+			],
+			[
+				"base2",
+				"mrs\\app\\views\\layout\\base2.blade.php"
+			],
+			[
+				"main.js",
+				"mrs-node\\main.js"
+			],
+			[
+				"globa",
+				"mrs-node\\global_announcement.js"
+			],
+			[
+				"chatbar",
+				"mrs\\public\\sass\\_chatbar.scss"
+			],
+			[
+				"genedata",
+				"mrs\\app\\config\\local\\gene\\database.php"
+			],
+			[
+				"chat.scss",
+				"mrs\\public\\sass\\_chatbar.scss"
+			],
+			[
+				"chat.js",
+				"mrs\\public\\js\\chat.js"
+			],
+			[
+				"mrs",
+				"mrs\\mrs.sublime-project"
+			],
+			[
+				"init.sh",
+				"mrs-node\\vagrant\\init.sh"
+			],
+			[
+				"vagrantfil",
+				"mrs-node\\vagrant\\Vagrantfile"
+			],
+			[
+				"glo",
+				"mrs-node\\global_announcement.js"
+			],
+			[
+				"global",
+				"mrs-node\\global_announcement.js"
+			],
+			[
+				"config.php",
+				"mrs\\app\\config\\packages\\aws\\aws-sdk-php-laravel\\config.php"
+			],
+			[
+				"main",
+				"mrs-node\\main.js"
+			],
+			[
+				"usermyz",
+				"mrs\\app\\controllers\\UserMyZipCodeCoverageAreaController.php"
+			],
+			[
+				"database",
+				"mrs\\app\\config\\database.php"
+			],
+			[
+				"cache",
+				"mrs\\app\\config\\cache.php"
+			],
+			[
+				"gene",
+				"mrs\\app\\config\\local\\gene\\cache.php"
+			],
+			[
+				"global.scs",
+				"mrs\\public\\sass\\_global.scss"
+			],
+			[
+				"style",
+				"mrs\\public\\sass\\style.scss"
+			],
+			[
+				"chatjs",
+				"mrs\\public\\js\\chat.js"
+			],
+			[
+				"chatbak",
+				"mrs\\public\\js\\chat.js.bak.js"
+			],
+			[
+				"chat.",
+				"mrs\\public\\js\\chat.js"
+			],
+			[
+				"bootcss",
+				"mrs\\public\\sass\\bootstrap.scss"
+			],
+			[
+				"chat.blade",
+				"mrs\\app\\views\\layout\\chat.blade.php"
+			],
+			[
+				"companlogo",
+				"mrs\\app\\views\\layout\\topbar\\company-logo.blade.php"
+			],
+			[
+				"headerscss",
+				"mrs\\public\\sass\\_header.scss"
+			],
+			[
+				"companylogo",
+				"mrs\\app\\views\\layout\\topbar\\company-logo.blade.php"
+			],
+			[
+				"notifica",
+				"mrs\\public\\js\\notifications.js"
+			],
+			[
+				"notifi",
+				"mrs\\public\\js\\notifications.js"
+			],
+			[
+				"chatblad",
+				"mrs\\app\\views\\layout\\chat.blade.php"
+			],
+			[
+				"base2.blad",
+				"app\\views\\layout\\base2.blade.php"
+			],
+			[
+				"chatscss",
+				"public\\sass\\_chatbar.scss"
+			],
+			[
+				"ziplist",
+				"app\\views\\user\\zipcode\\listing.blade.php"
+			],
+			[
+				"ass",
+				"public\\js\\assigned_location.js"
+			],
+			[
+				"noty.scss",
+				"public\\sass\\_noty.scss"
+			],
+			[
+				"settings",
+				"public\\sass\\_settings.scss"
+			],
+			[
+				"notif",
+				"public\\js\\notifications.js"
+			],
+			[
+				"header",
+				"public\\sass\\_header.scss"
+			],
+			[
+				"base2.blade",
+				"app\\views\\layout\\base2.blade.php"
+			],
+			[
+				"employee",
+				"app\\models\\Employee.php"
+			],
+			[
+				"routuser-my",
+				"app\\routing\\user-my_zipcode_coverage_area.php"
+			],
+			[
+				"myziplistin",
+				"app\\views\\user\\myZipCodeCoverageArea\\listing.blade.php"
+			],
+			[
+				"bootstrap.blade",
+				"app\\views\\bootstrap.blade.php"
+			],
+			[
+				"bootstrap.bla",
+				"app\\views\\bootstrap.blade.php"
+			],
+			[
+				"formbui",
+				"public\\js\\formBuilder.js"
+			],
+			[
+				"bootstrapblad",
+				"app\\views\\bootstrap.blade.php"
+			],
+			[
+				"assignedblade",
+				"app\\views\\admin\\assignedLocation\\listing.blade.php"
+			],
+			[
+				"assign",
+				"public\\js\\assigned_location.js"
+			],
+			[
+				"default.js",
+				"public\\js\\noty\\themes\\default.js"
+			],
+			[
+				"base2.",
+				"app\\views\\layout\\base2.blade.php"
+			],
+			[
+				"style.scss",
+				"public\\sass\\style.scss"
+			],
+			[
+				"chat",
+				"public\\js\\chat.js"
+			],
+			[
+				"navuser",
+				"app\\views\\layout\\navbar\\user.blade.php"
+			],
+			[
+				"assi",
+				"public\\js\\assigned_location.js"
+			],
+			[
+				"route",
+				"app\\routes.php"
+			],
+			[
+				"baseco",
+				"app\\controllers\\BaseController.php"
+			],
+			[
+				"listingblade",
+				"app\\views\\admin\\company\\listing.blade.php"
+			],
+			[
+				"breadcrumbsbla",
+				"app\\views\\layout\\breadcrumbs.blade.php"
+			],
+			[
+				"admincompanylist",
+				"app\\views\\admin\\company\\listing.blade.php"
+			],
+			[
+				"adminlisting.blade",
+				"app\\views\\admin\\assignedLocation\\listing.blade.php"
+			],
+			[
+				"emplolist",
+				"app\\views\\admin\\employee\\listing.blade.php"
+			],
+			[
+				"fieldset",
+				"public\\sass\\_fieldset.scss"
+			],
+			[
+				"primabla",
+				"app\\views\\admin\\partials\\primary-information.blade.php"
+			],
+			[
+				"primary",
+				"app\\models\\PrimaryInformation.php"
+			],
+			[
+				"view.bl",
+				"app\\views\\admin\\company\\view.blade.php"
+			],
+			[
+				"primablade",
+				"app\\views\\admin\\partials\\primary-information.blade.php"
+			],
+			[
+				"fiel",
+				"public\\sass\\_fieldset.scss"
+			],
+			[
+				"adminemployee",
+				"app\\views\\admin\\employee\\account.blade.php"
+			],
+			[
+				"logins.blade",
+				"app\\views\\admin\\reports\\logins.blade.php"
+			],
+			[
+				"companymanage",
+				"app\\views\\pages\\admin\\company\\manage.blade.php"
+			],
+			[
+				"bootstrapmrs",
+				"public\\sass\\_bootstrap-mrs.scss"
+			],
+			[
+				"field",
+				"public\\sass\\_fieldset.scss"
+			],
+			[
+				"home.scss",
+				"public\\sass\\pages\\_home.scss"
+			],
+			[
+				"signup.blade",
+				"app\\views\\pages\\signup.blade.php"
+			],
+			[
+				"signup/",
+				"app\\views\\signup\\manager.blade.php"
+			],
+			[
+				"owen",
+				"app\\views\\signup\\owner_nonadministrator.blade.php"
+			],
+			[
+				"user-pas",
+				"app\\views\\signup\\user-pass.blade.php"
+			],
+			[
+				"owner",
+				"app\\views\\signup\\owner_administrator.blade.php"
+			],
+			[
+				"signupblade",
+				"app\\views\\pages\\signup.blade.php"
+			],
+			[
+				"filter",
+				"app\\views\\pages\\admin\\company\\list-filter.blade.php"
+			],
+			[
+				"logo",
+				"app\\views\\layout\\topbar\\company-logo.blade.php"
+			],
+			[
+				"mixins",
+				"public\\sass\\bootstrap\\_mixins.scss"
+			],
+			[
+				"bootsrapmrs",
+				"public\\sass\\_bootstrap-mrs.scss"
+			],
+			[
+				"pagination",
+				"public\\sass\\bootstrap\\_pagination.scss"
+			],
+			[
+				"paginationscss",
+				"public\\sass\\bootstrap\\_pagination.scss"
+			],
+			[
+				"login",
+				"app\\views\\layout\\topbar\\login-form.blade.php"
+			],
+			[
+				"global.scss",
+				"public\\sass\\_global.scss"
+			],
+			[
+				"bootblade",
+				"app\\views\\bootstrap.blade.php"
+			],
+			[
+				"mobile.scss",
+				"public\\sass\\_mobile.scss"
+			],
+			[
+				"base2.scss",
+				"public\\sass\\_base2.scss"
+			],
+			[
+				"buttons",
+				"public\\sass\\bootstrap\\_buttons.scss"
+			],
+			[
+				"bootstrap",
+				"public\\sass\\bootstrap.scss"
+			],
+			[
+				"bootstrapblade",
+				"app\\views\\bootstrap.blade.php"
+			],
+			[
+				"list.blade",
+				"app\\views\\pages\\admin\\company\\list.blade.php"
+			],
+			[
+				"",
+				"public\\sass\\bootstrap\\_buttons.scss"
+			],
+			[
+				"bootstrapscss",
+				"public\\sass\\_bootstrap-mrs.scss"
+			],
+			[
+				".htm",
+				"app\\views\\bootstrap.blade.php.htm"
+			],
+			[
+				"formelemen",
+				"public\\sass\\_form-elements.scss"
+			],
+			[
+				"homec",
+				"app\\controllers\\HomeController.php"
+			],
+			[
+				"form-buil",
+				"app\\routing\\form-builder.php"
+			],
+			[
+				"forminde",
+				"app\\views\\formbuilder\\index.blade.php"
+			],
+			[
+				"public",
+				"app\\routing\\public.php"
+			],
+			[
+				"form-b",
+				"app\\routing\\form-builder.php"
+			],
+			[
+				"routes",
+				"app\\routes.php"
+			],
+			[
+				"pendingblade",
+				"app\\views\\user\\entity\\pending.blade.php"
+			],
+			[
+				"base2scss",
+				"public\\sass\\_base2.scss"
+			],
+			[
+				"formbscss",
+				"public\\sass\\formbuilder.scss"
+			],
+			[
+				"formbphp",
+				"app\\views\\layout\\topbar\\login-form.blade.php"
+			],
+			[
+				"jqui",
+				"public\\sass\\_jqui.scss"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 182.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
