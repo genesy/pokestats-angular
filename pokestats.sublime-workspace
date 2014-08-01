@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"Poek",
+				"PokemonCtrl"
+			],
+			[
 				"chat",
 				"chatBarMessages"
 			],
@@ -35,13 +39,85 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "public/index.html",
+			"settings":
+			{
+				"buffer_size": 6184,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Gulpfile.js",
+			"settings":
+			{
+				"buffer_size": 230,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "bower.json",
+			"settings":
+			{
+				"buffer_size": 458,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 68.0,
+		"height": 118.0,
 		"selected_items":
 		[
+			[
+				"rename",
+				"File: Rename"
+			],
+			[
+				"reinde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"conv tab",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"move",
+				"File: Move"
+			],
+			[
+				"new",
+				"File: New File Relative to Current View"
+			],
+			[
+				"new fi",
+				"File: New File Relative to Current View"
+			],
+			[
+				"new frel",
+				"File: New File Relative to Current View"
+			],
+			[
+				"new f",
+				"File: New File Relative to Current View"
+			],
+			[
+				"new file ",
+				"File: New File Relative to Current View"
+			],
+			[
+				"reindent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"indent",
+				"Indentation: Convert to Tabs"
+			],
 			[
 				"proje save",
 				"Project: Save As"
@@ -117,10 +193,6 @@
 			[
 				"syn angu",
 				"Set Syntax: HTML (Angular.js)"
-			],
-			[
-				"rename",
-				"File: Rename"
 			],
 			[
 				"pull",
@@ -233,6 +305,24 @@
 	},
 	"file_history":
 	[
+		"/D/My Projects/pokestatsv2/config.rb",
+		"/D/My Projects/pokestatsv2/server.js",
+		"/D/My Projects/pokestatsv2/public/index.html",
+		"/D/My Projects/pokestatsv2/public/scripts/app.js",
+		"/D/My Projects/pokestatsv2/public/scripts/factories.js",
+		"/D/My Projects/pokestatsv2/public/scripts/directives.js",
+		"/D/My Projects/pokestatsv2/public/scripts/filters.js",
+		"/D/My Projects/pokestatsv2/public/scripts/services.js",
+		"/D/My Projects/pokestatsv2/public/scripts/controllers.js",
+		"/D/My Projects/pokestatsv2/public/bower_components/angular-socket-io/socket.js",
+		"/D/My Projects/pokestatsv2/node_modules/socket.io/lib/socket.js",
+		"/D/My Projects/pokestatsv2/node_modules/gulp/node_modules/chalk/node_modules/.bin/supports-color",
+		"/D/My Projects/pokestatsv2/public/scripts/controllers/main.js",
+		"/D/My Projects/pokestatsv2/node_modules/socket.io/Makefile",
+		"/D/My Projects/pokestatsv2/node_modules/express.io/switch.js",
+		"/D/My Projects/pokestatsv2/public/main.js",
+		"/D/My Projects/pokestatsv2/public/scripts/main.js",
+		"/D/My Projects/pokestatsv2/node_modules/gulp/node_modules/gulp-util/lib/isNull.js",
 		"/D/My Projects/mrs/public/js/chat.js",
 		"/C/Users/Gene Sy/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
 		"/D/My Projects/mrs/public/sass/formbuilder.scss",
@@ -342,29 +432,11 @@
 		"/D/mrs/public/sass/bootstrap/_print.scss",
 		"/D/mrs/public/sass/_bootstrap-mrs.scss",
 		"/D/mrs/public/sass/bootstrap/_bootstrap.scss",
-		"/D/mrs/public/sass/bootstrap.scss",
-		"/D/mrs/public/js/bootstrap.js",
-		"/D/mrs/public/sass/_chat.scss",
-		"/D/mrs/app/config/packages/frozennode/xssinput/xssinput.php",
-		"/D/mrs/app/views/index.blade.php",
-		"/D/mrs-node/index.html",
-		"/D/mrs/app/controllers/CompanyController.php",
-		"/D/mrs/app/views/user/partials/changes/address.blade.php",
-		"/D/mrs/app/routing/user.php",
-		"/D/mrs/app/routing/user-serviceprovider.php",
-		"/D/mrs/app/libraries/helpers.php",
-		"/D/mrs/app/models/Company.php",
-		"/D/mrs/composer.json",
-		"/D/mrs/app/controllers/BaseController.php",
-		"/D/mrs/db/backup.sql",
-		"/D/mrs/app/breadcrumbs.php",
-		"/D/mrs/public/sass/_list.scss",
-		"/D/mrs/app/start/local.php",
-		"/D/mrs/app/views/layout/chat.blade.php"
+		"/D/mrs/public/sass/bootstrap.scss"
 	],
 	"find":
 	{
-		"height": 36.0
+		"height": 46.0
 	},
 	"find_in_files":
 	{
@@ -387,6 +459,25 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"stylesheets",
+			"src",
+			"directory",
+			"socket",
+			"provider",
+			"filtfaers",
+			"socketProvider",
+			"filters",
+			"app",
+			"filtesrs",
+			"directives",
+			"pokemon",
+			"m",
+			"controllers",
+			"main",
+			"Avengers",
+			"socket",
+			"$http', socket",
+			"$http",
 			"window",
 			"dropdown",
 			".highlight",
@@ -495,26 +586,7 @@
 			"show",
 			"25px",
 			"span",
-			"div",
-			"25px",
-			"35px",
-			"left",
-			"chatbox",
-			"222",
-			"fff",
-			"left",
-			"chatbar-h",
-			"company-name",
-			".title",
-			"<td class=\"title\" colspan=\"9\">\n								<div class=\"msgbox cm<?php echo $countmsg;?>\">\n									<table class=\"tablemsg\" align=\"left\">\n										<tr>\n											<td class=\"labelmsg\" width=\"100\">---</td>\n											<td class=\"labelmsg2\" width=\"\">---</td>\n										</tr>\n									</table>\n								</div>\n								<div>\n									\n								</div>\n								<div>\n									",
-			"	<td class=\"title\" width=\"100\"></td>\n							<td class=\"title\" width=\"100\"></td>\n							<td class=\"title\" width=\"200\"><a href=\"#\"><?php echo $datamsg->country;?></a></td>\n							<td class=\"title\" width=\"200\"><a href=\"#\"><?php echo $datamsg->state;?></a></td>\n							<td class=\"title\" width=\"100\"><?php echo $datamsg->zipcode;?></td>\n							<td class=\"title\"></td>\n							<td class=\"title\" width=\"250\"><?php echo date(\"F d, Y - h:i A\",strtotime($datamsg->date_created));?></td>\n							<td class=\"control\" width=\"20\"></td>\n							<td class=\"control\" width=\"20\" align=\"center\">\n							</td>\n						</tr>",
-			"setColor",
-			"2",
-			"state",
-			"Something",
-			"Alaska",
-			"zipcodecity",
-			"Chat"
+			"div"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -546,8 +618,96 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "public/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6184,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								312,
+								336
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Gulpfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 230,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								38,
+								38
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "bower.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 458,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								143,
+								143
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -609,6 +769,42 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"bower",
+				"public\\bower.json"
+			],
+			[
+				"inde",
+				"public\\index.html"
+			],
+			[
+				"cont",
+				"public\\scripts\\controllers.js"
+			],
+			[
+				"scoket.js",
+				"public\\bower_components\\angular-socket-io\\socket.js"
+			],
+			[
+				"fac",
+				"public\\scripts\\factories.js"
+			],
+			[
+				"app.js",
+				"public\\scripts\\app.js"
+			],
+			[
+				"app",
+				"app.js"
+			],
+			[
+				"main",
+				"public\\scripts\\main.js"
+			],
+			[
+				"index.html",
+				"public\\index.html"
+			],
 			[
 				"chaat.js",
 				"mrs\\public\\js\\chat.js.bak.js"
@@ -732,10 +928,6 @@
 			[
 				"config.php",
 				"mrs\\app\\config\\packages\\aws\\aws-sdk-php-laravel\\config.php"
-			],
-			[
-				"main",
-				"mrs-node\\main.js"
 			],
 			[
 				"usermyz",
@@ -1088,38 +1280,6 @@
 			[
 				"forminde",
 				"app\\views\\formbuilder\\index.blade.php"
-			],
-			[
-				"public",
-				"app\\routing\\public.php"
-			],
-			[
-				"form-b",
-				"app\\routing\\form-builder.php"
-			],
-			[
-				"routes",
-				"app\\routes.php"
-			],
-			[
-				"pendingblade",
-				"app\\views\\user\\entity\\pending.blade.php"
-			],
-			[
-				"base2scss",
-				"public\\sass\\_base2.scss"
-			],
-			[
-				"formbscss",
-				"public\\sass\\formbuilder.scss"
-			],
-			[
-				"formbphp",
-				"app\\views\\layout\\topbar\\login-form.blade.php"
-			],
-			[
-				"jqui",
-				"public\\sass\\_jqui.scss"
 			]
 		],
 		"width": 0.0
@@ -1129,6 +1289,18 @@
 		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"",
+				"D:\\My Projects\\mrs\\mrs.sublime-project"
+			],
+			[
+				"mrs.sub",
+				"D:\\My Projects\\mrs\\mrs.sublime-project"
+			],
+			[
+				"mrs",
+				"D:\\mrs\\mrs.sublime-workspace"
+			]
 		],
 		"width": 380.0
 	},

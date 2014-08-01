@@ -41,6 +41,7 @@ function PokemonCtrl($scope, $http, socket){
 	});
 
 	socket.on("get_all_pokemons", function( data ) {
+		console.log(data);;
 		for (var property in data) {
 				var prop = data[property];
 				$scope.pokemons.push(JSON.parse(prop));
