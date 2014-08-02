@@ -10,8 +10,7 @@ gulp.task('compass', function() {
 		css: folder + 'css',
 		sass: folder + 'sass'
 	}))
-	// .pipe(gulp.dest('app/assets/temp'))
-		.pipe(livereload(1337))
+	.pipe(livereload(1337))
 });
 
 gulp.task('watch', function() {

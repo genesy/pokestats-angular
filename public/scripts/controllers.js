@@ -1,12 +1,13 @@
 'use strict';
 angular.module('Pokestats.controllers', ['Pokestats.factories'])
 .controller('PokemonCtrl', PokemonCtrl);
-PokemonCtrl.$inject = ['$scope','$http', 'socket'];
-function PokemonCtrl($scope, $http, socket){
+PokemonCtrl.$inject = ['$scope','$http', 'socket', '$window'];
+function PokemonCtrl($scope, $http, socket, $window){
 	$scope.pokemons = [];
 	$scope.moves = '';
 	$scope.ability = '';
 	$scope.selectedPokemon =[];
+	console.log($window);
 	$scope.types = [
 		"Normal",
 		"Fire",
@@ -30,28 +31,22 @@ function PokemonCtrl($scope, $http, socket){
 
 
 	$scope.selectPokemon = function(pokemon) {
-		console.log(pokemon);
 		socket.emit("getPokemon", pokemon)
 	}
 
 	socket.on("returnPokemon", function( data ){
 		data = JSON.parse(data);
-		console.log(data);
 		$scope.selectedPokemon = data;
 	});
 
 	socket.on("get_all_pokemons", function( data ) {
-		console.log(data);;
 		for (var property in data) {
 				var prop = data[property];
 				$scope.pokemons.push(JSON.parse(prop));
 				prop = JSON.parse(prop);
 				if(prop.number==1) {
-					// $scope.selectedPokemon = prop;
-					// console.log(prop);
 					$scope.selectPokemon(prop);
 				}
 		}
-		// $scope.selectedPokemon = $scope.pokemons[0];
 	})
 }

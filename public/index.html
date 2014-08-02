@@ -7,28 +7,48 @@
 	<link rel="stylesheet" href="css/pkmn-icons.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body ng-app="Pokestats" ng-controller="PokemonCtrl">
+<body ng-app="Pokestats" ng-controller="PokemonCtrl as Pokestats">
 	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 		<div class="navbar-header">
 			<a class="navbar-brand" href="#">Pokestats V2</a>
 		</div>
-    </div>
+	</div>
 	<div id="main">
 
-		<div id="pokemon-list">
+		<div id="sidebar">
 
-			<div class="form-group">
-				<label for="search">Search</label>
-				<input type="text" class="form-control" ng-model="search.name">
+			<div id="search-area">
+				<div class="form-group">
+					<label for="search">Search</label>
+					<input type="text" class="form-control" ng-model="Pokestats.search.name">
+				</div>
 			</div>
-			<ul class="list-group">
-				<li class="list-group-item" pokemon ng-repeat="pokemon in pokemons | orderBy:'number' | filter:search">
-					<span class="badge"> {{ pokemon.number }} </span>
-					<span class="name"> {{ pokemon.name }}</span>
-					<span class="pki n{{pokemon.number}} pull-left"></span>
-				</li>
-			</ul>
+
+			<div id="pokemon-list">
+				<!-- <ul class="list-group">
+					<li class="list-group-item" pokemon ng-repeat="pokemon in pokemons | orderBy:'number' | filter:search">
+						<span class="badge pull-left"> {{ pokemon.number }} </span>
+
+					</li>
+				</ul> -->
+				<table class="table">
+					<tr pokemon ng-repeat="pokemon in pokemons | orderBy:'number' | filter:search">
+						<td>{{ pokemon.number }}</td>
+						<td>
+							<span class="name"> {{ pokemon.name }}</span>
+							<span class="pki n{{pokemon.number}} pull-left"></span>
+						</td>
+						<td>
+							<span class="type" ng-repeat="type in pokemon.types | orderBy:'type' "> {{ type }} </span>
+						</td>
+					</tr>
+				</table>
+			</div>
+
 		</div>
+
+
+
 		<div id="pokemon-info">
 			<div class="row">
 				<div class="col-md-12">
@@ -197,7 +217,7 @@
 	<script src="bower_components/angularjs/angular.min.js"></script>
 	<script src="bower_components/angular-route/angular-route.min.js"></script>
 	<script src="bower_components/angular-socket-io/socket.min.js"></script>
-
+	<script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
 
 	<script src="scripts/app.js"></script>
 	<script src="scripts/factories.js"></script>

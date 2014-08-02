@@ -28,20 +28,22 @@ body {
 }
 
 
-#pokemon-list, #pokemon-info {
+#sidebar, #pokemon-info {
 	height: 100%;
-	overflow: auto;
-	padding: 15px;
 
 }
 
-#pokemon-list {
+#sidebar {
 	@extend .cf;
 	width: 300px;
 	float: left;
 	background-color: #FAFAFA;
 	position: relative;
-	ul {
+	.nav {
+		margin-bottom: 15px;
+	}
+	.list-group {
+		margin: 15px;
 		height: 100%;
 		li {
 			cursor: pointer;
@@ -53,11 +55,23 @@ body {
 	}
 }
 
+#pokemon-list {
+	height: 90%;
+	overflow: auto;
+}
+
+#search-area {
+	height: 10%;
+	padding: 15px;
+}
+
 #pokemon-info {
+	padding: 15px;
 	@extend .cf;
 	float: left;
 	background-color: #DDD;
 	width: 100%;
 	padding-left: 315px;
 	margin-left: -300px;
+	overflow: auto;
 }
