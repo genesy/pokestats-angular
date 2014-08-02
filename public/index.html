@@ -5,188 +5,177 @@
 	<title>Pokestats V2</title>
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
 	<link rel="stylesheet" href="css/pkmn-icons.css">
-	<script src="socket.io/socket.io.js"></script>
 	<link rel="stylesheet" href="css/style.css">
-	<style>
-	body {
-		padding-top: 70px;
-		padding-bottom: 30px;
-		}
-	</style>
 </head>
 <body ng-app="Pokestats" ng-controller="PokemonCtrl">
 	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-		<div class="container">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="#">Pokestats V2</a>
-			</div>
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#">Pokestats V2</a>
 		</div>
     </div>
-	<div class="container-fluid">
-		<div class="row">
+	<div id="main">
 
-			<div class="col-md-3">
+		<div id="pokemon-list">
 
-				<div class="form-group">
-					<label for="search">Search</label>
-					<input type="text" class="form-control" ng-model="search.name">
-				</div>
-				<ul class="list-group">
-					<li class="list-group-item" pokemon ng-repeat="pokemon in pokemons | orderBy:'number' | filter:search">
-						<span class="badge"> {{ pokemon.number }} </span>
-						<span class="name"> {{ pokemon.name }}</span>
-						<span class="pki n{{pokemon.number}} pull-left"></span>
-					</li>
-				</ul>
+			<div class="form-group">
+				<label for="search">Search</label>
+				<input type="text" class="form-control" ng-model="search.name">
 			</div>
-			<div class="col-md-9">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="jumbotron">
+			<ul class="list-group">
+				<li class="list-group-item" pokemon ng-repeat="pokemon in pokemons | orderBy:'number' | filter:search">
+					<span class="badge"> {{ pokemon.number }} </span>
+					<span class="name"> {{ pokemon.name }}</span>
+					<span class="pki n{{pokemon.number}} pull-left"></span>
+				</li>
+			</ul>
+		</div>
+		<div id="pokemon-info">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="jumbotron">
 
-						<h1 class="h1">
-							<img src="img/sprites/m/{{ selectedPokemon.number }}.png" alt="{{ selectedPokemon.name }}">{{ selectedPokemon.name }}</h1>
+					<h1 class="h1">
+						<img src="img/sprites/m/{{ selectedPokemon.number }}.png" alt="{{ selectedPokemon.name }}">{{ selectedPokemon.name }}</h1>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							Base Stats
+						</div>
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-md-3">
+									<strong>HP</strong>
+								</div>
+								<div class="col-md-9">
+
+									<div class="progress">
+										<div class="progress-bar progress-bar-success" style="width: {{ selectedPokemon.baseStats[0] / 255 * 100 | number:0 }}%;">
+										{{ selectedPokemon.baseStats[0] }}
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-3">
+									<strong>Atk</strong>
+								</div>
+								<div class="col-md-9">
+
+									<div class="progress">
+										<div class="progress-bar progress-bar-success" style="width: {{ selectedPokemon.baseStats[1] / 255 * 100 | number:0 }}%;">
+										{{ selectedPokemon.baseStats[1] }}
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-3">
+									<strong>Def</strong>
+								</div>
+								<div class="col-md-9">
+
+									<div class="progress">
+										<div class="progress-bar progress-bar-success" style="width: {{ selectedPokemon.baseStats[2] / 255 * 100 | number:0 }}%;">
+										{{ selectedPokemon.baseStats[2] }}
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-3">
+									<strong>Sp.Atk</strong>
+								</div>
+								<div class="col-md-9">
+
+									<div class="progress">
+										<div class="progress-bar progress-bar-success" style="width: {{ selectedPokemon.baseStats[3] / 255 * 100 | number:0 }}%;">
+										{{ selectedPokemon.baseStats[3] }}
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-3">
+									<strong>Sp.Def</strong>
+								</div>
+								<div class="col-md-9">
+
+									<div class="progress">
+										<div class="progress-bar progress-bar-success" style="width: {{ selectedPokemon.baseStats[4] / 255 * 100 | number:0 }}%;">
+										{{ selectedPokemon.baseStats[4] }}
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-3">
+									<strong>Spd</strong>
+								</div>
+								<div class="col-md-9">
+
+									<div class="progress">
+										<div class="progress-bar progress-bar-success" style="width: {{ selectedPokemon.baseStats[5] / 255 * 100 | number:0 }}%;">
+										{{ selectedPokemon.baseStats[5] }}
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="row">
-					<div class="col-md-4">
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								Base Stats
-							</div>
-							<div class="panel-body">
-								<div class="row">
-									<div class="col-md-3">
-										<strong>HP</strong>
-									</div>
-									<div class="col-md-9">
+				<div class="col-md-4">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							Learned Moves
+						</div>
 
-										<div class="progress">
-											<div class="progress-bar progress-bar-success" style="width: {{ selectedPokemon.baseStats[0] / 255 * 100 | number:0 }}%;">
-											{{ selectedPokemon.baseStats[0] }}
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-3">
-										<strong>Atk</strong>
-									</div>
-									<div class="col-md-9">
-
-										<div class="progress">
-											<div class="progress-bar progress-bar-success" style="width: {{ selectedPokemon.baseStats[1] / 255 * 100 | number:0 }}%;">
-											{{ selectedPokemon.baseStats[1] }}
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-3">
-										<strong>Def</strong>
-									</div>
-									<div class="col-md-9">
-
-										<div class="progress">
-											<div class="progress-bar progress-bar-success" style="width: {{ selectedPokemon.baseStats[2] / 255 * 100 | number:0 }}%;">
-											{{ selectedPokemon.baseStats[2] }}
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="row">
-									<div class="col-md-3">
-										<strong>Sp.Atk</strong>
-									</div>
-									<div class="col-md-9">
-
-										<div class="progress">
-											<div class="progress-bar progress-bar-success" style="width: {{ selectedPokemon.baseStats[3] / 255 * 100 | number:0 }}%;">
-											{{ selectedPokemon.baseStats[3] }}
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="row">
-									<div class="col-md-3">
-										<strong>Sp.Def</strong>
-									</div>
-									<div class="col-md-9">
-
-										<div class="progress">
-											<div class="progress-bar progress-bar-success" style="width: {{ selectedPokemon.baseStats[4] / 255 * 100 | number:0 }}%;">
-											{{ selectedPokemon.baseStats[4] }}
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="row">
-									<div class="col-md-3">
-										<strong>Spd</strong>
-									</div>
-									<div class="col-md-9">
-
-										<div class="progress">
-											<div class="progress-bar progress-bar-success" style="width: {{ selectedPokemon.baseStats[5] / 255 * 100 | number:0 }}%;">
-											{{ selectedPokemon.baseStats[5] }}
-											</div>
-										</div>
-									</div>
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-md-12">
+									<table class="table">
+										<thead>
+											<tr>
+												<th>Level</th>
+												<th>Name</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr ng-repeat="move in selectedPokemon.learnedMoves track by $index">
+												<td>
+													{{ move.slice(move.indexOf('(')+1, move.indexOf(')')) }}
+												</td>
+												<td>{{ move.slice(0, move.indexOf('(')) }}</td>
+											</tr>
+										</tbody>
+									</table>
 								</div>
 							</div>
 						</div>
 					</div>
+				</div>
 
-					<div class="col-md-4">
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								Learned Moves
-							</div>
-
-							<div class="panel-body">
-								<div class="row">
-									<div class="col-md-12">
-										<table class="table">
-											<thead>
-												<tr>
-													<th>Level</th>
-													<th>Name</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr ng-repeat="move in selectedPokemon.learnedMoves track by $index">
-													<td>
-														{{ move.slice(move.indexOf('(')+1, move.indexOf(')')) }}
-													</td>
-													<td>{{ move.slice(0, move.indexOf('(')) }}</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
-							</div>
+				<div class="col-md-4">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							Abilities
 						</div>
-					</div>
-
-					<div class="col-md-4">
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								Abilities
-							</div>
-							<div class="panel-body">
-								<div class="row">
-									<div class="col-md-12">
-										<ul class="list-group">
-											<li class="list-group-item" ng-repeat="ability in selectedPokemon.abilities">
-												{{ ability }}
-											</li>
-										</ul>
-									</div>
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-md-12">
+									<ul class="list-group">
+										<li class="list-group-item" ng-repeat="ability in selectedPokemon.abilities">
+											{{ ability }}
+										</li>
+									</ul>
 								</div>
 							</div>
 						</div>
@@ -196,11 +185,20 @@
 		</div>
 
 	</div>
+
+
+	<script src="socket.io/socket.io.js"></script>
+
+	<script src="http://127.0.0.1:1337/livereload.js"></script>
+
+
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script src="bower_components/angularjs/angular.min.js"></script>
 	<script src="bower_components/angular-route/angular-route.min.js"></script>
 	<script src="bower_components/angular-socket-io/socket.min.js"></script>
+
+
 	<script src="scripts/app.js"></script>
 	<script src="scripts/factories.js"></script>
 	<script src="scripts/filters.js"></script>

@@ -43,7 +43,7 @@
 			"file": "public/index.html",
 			"settings":
 			{
-				"buffer_size": 6184,
+				"buffer_size": 6229,
 				"line_ending": "Windows"
 			}
 		},
@@ -51,7 +51,23 @@
 			"file": "Gulpfile.js",
 			"settings":
 			{
-				"buffer_size": 230,
+				"buffer_size": 473,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": ".gitignore",
+			"settings":
+			{
+				"buffer_size": 59,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "public/sass/style.scss",
+			"settings":
+			{
+				"buffer_size": 56,
 				"line_ending": "Windows"
 			}
 		},
@@ -67,9 +83,17 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 118.0,
+		"height": 375.0,
 		"selected_items":
 		[
+			[
+				"dele",
+				"File: Delete"
+			],
+			[
+				"new file",
+				"File: New File Relative to Current View"
+			],
 			[
 				"rename",
 				"File: Rename"
@@ -305,6 +329,12 @@
 	},
 	"file_history":
 	[
+		"/D/My Projects/pokestatsv2/.gitignore~",
+		"/D/My Projects/pokestatsv2/node_modules/gulp-sass/node_modules/node-sass/node_modules/mocha/node_modules/jade/lib/inline-tags.js",
+		"/D/My Projects/pokestatsv2/public/bower_components/jquery/src/css/addGetHookIf.js",
+		"/D/My Projects/pokestatsv2/public/css/style.css",
+		"/D/My Projects/pokestatsv2/public/bower_components/angular-socket-io/socket.js",
+		"/D/My Projects/pokestatsv2/.gitignore",
 		"/D/My Projects/pokestatsv2/config.rb",
 		"/D/My Projects/pokestatsv2/server.js",
 		"/D/My Projects/pokestatsv2/public/index.html",
@@ -314,7 +344,6 @@
 		"/D/My Projects/pokestatsv2/public/scripts/filters.js",
 		"/D/My Projects/pokestatsv2/public/scripts/services.js",
 		"/D/My Projects/pokestatsv2/public/scripts/controllers.js",
-		"/D/My Projects/pokestatsv2/public/bower_components/angular-socket-io/socket.js",
 		"/D/My Projects/pokestatsv2/node_modules/socket.io/lib/socket.js",
 		"/D/My Projects/pokestatsv2/node_modules/gulp/node_modules/chalk/node_modules/.bin/supports-color",
 		"/D/My Projects/pokestatsv2/public/scripts/controllers/main.js",
@@ -427,12 +456,7 @@
 		"/D/mrs/public/sass/bootstrap/_thumbnails.scss",
 		"/D/mrs/public/sass/bootstrap/_tooltip.scss",
 		"/D/mrs/public/sass/bootstrap/_tables.scss",
-		"/D/mrs/public/sass/bootstrap/_theme.scss",
-		"/D/mrs/public/sass/bootstrap/_type.scss",
-		"/D/mrs/public/sass/bootstrap/_print.scss",
-		"/D/mrs/public/sass/_bootstrap-mrs.scss",
-		"/D/mrs/public/sass/bootstrap/_bootstrap.scss",
-		"/D/mrs/public/sass/bootstrap.scss"
+		"/D/mrs/public/sass/bootstrap/_theme.scss"
 	],
 	"find":
 	{
@@ -618,7 +642,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -627,15 +651,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6184,
+						"buffer_size": 6229,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								312,
-								336
+								318,
+								318
 							]
 						],
 						"settings":
@@ -647,7 +671,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -656,15 +680,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 230,
+						"buffer_size": 473,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								38,
-								38
+								46,
+								46
 							]
 						],
 						"settings":
@@ -675,11 +699,68 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
+					"file": ".gitignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 59,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								59,
+								59
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "public/sass/style.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 56,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10,
+								10
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
 					"file": "bower.json",
 					"semi_transient": false,
 					"settings":
@@ -705,7 +786,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 4,
 					"type": "text"
 				}
 			]
@@ -769,6 +850,14 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"giti",
+				".gitignore~"
+			],
+			[
+				"style.css",
+				"public\\css\\style.css"
+			],
 			[
 				"bower",
 				"public\\bower.json"
@@ -1272,14 +1361,6 @@
 			[
 				"homec",
 				"app\\controllers\\HomeController.php"
-			],
-			[
-				"form-buil",
-				"app\\routing\\form-builder.php"
-			],
-			[
-				"forminde",
-				"app\\views\\formbuilder\\index.blade.php"
 			]
 		],
 		"width": 0.0
@@ -1319,7 +1400,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 182.0,
+	"side_bar_width": 359.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
