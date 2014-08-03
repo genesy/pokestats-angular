@@ -26,7 +26,7 @@
 
 			<div id="pokemon-list" class="pokemon-list">
 				<table class="table">
-					<tr pokemon ng-repeat="pokemon in pokemons | orderBy:'number' | filter:Pokestats.search.name">
+					<tr pokemon ng-repeat="pokemon in pokemons | orderBy:'number'" ng-hide="pokemon.name.indexOf(Pokestats.search.name) && Pokestats.search.name.length > 0">
 						<td>{{ pokemon.number }}</td>
 						<td class="pokemon-name">
 							<span class="name"> {{ pokemon.name }}</span>
@@ -49,8 +49,9 @@
 				<div class="col-md-12">
 					<div class="jumbotron">
 
-					<h1 class="h1">
-						<img src="img/sprites/m/{{ selectedPokemon.number }}.png" alt="{{ selectedPokemon.name }}">{{ selectedPokemon.name }}</h1>
+						<h1 class="h1">
+							<img src="img/sprites/m/{{ selectedPokemon.number }}.png" alt="{{ selectedPokemon.name }}">{{ selectedPokemon.name }}
+						</h1>
 					</div>
 				</div>
 			</div>
@@ -70,7 +71,7 @@
 
 									<div class="progress">
 										<div class="progress-bar progress-bar-success" style="width: {{ selectedPokemon.baseStats[0] / 255 * 100 | number:0 }}%;">
-										{{ selectedPokemon.baseStats[0] }}
+											{{ selectedPokemon.baseStats[0] }}
 										</div>
 									</div>
 								</div>
@@ -83,7 +84,7 @@
 
 									<div class="progress">
 										<div class="progress-bar progress-bar-success" style="width: {{ selectedPokemon.baseStats[1] / 255 * 100 | number:0 }}%;">
-										{{ selectedPokemon.baseStats[1] }}
+											{{ selectedPokemon.baseStats[1] }}
 										</div>
 									</div>
 								</div>
@@ -96,7 +97,7 @@
 
 									<div class="progress">
 										<div class="progress-bar progress-bar-success" style="width: {{ selectedPokemon.baseStats[2] / 255 * 100 | number:0 }}%;">
-										{{ selectedPokemon.baseStats[2] }}
+											{{ selectedPokemon.baseStats[2] }}
 										</div>
 									</div>
 								</div>
@@ -110,7 +111,7 @@
 
 									<div class="progress">
 										<div class="progress-bar progress-bar-success" style="width: {{ selectedPokemon.baseStats[3] / 255 * 100 | number:0 }}%;">
-										{{ selectedPokemon.baseStats[3] }}
+											{{ selectedPokemon.baseStats[3] }}
 										</div>
 									</div>
 								</div>
@@ -124,7 +125,7 @@
 
 									<div class="progress">
 										<div class="progress-bar progress-bar-success" style="width: {{ selectedPokemon.baseStats[4] / 255 * 100 | number:0 }}%;">
-										{{ selectedPokemon.baseStats[4] }}
+											{{ selectedPokemon.baseStats[4] }}
 										</div>
 									</div>
 								</div>
@@ -138,7 +139,7 @@
 
 									<div class="progress">
 										<div class="progress-bar progress-bar-success" style="width: {{ selectedPokemon.baseStats[5] / 255 * 100 | number:0 }}%;">
-										{{ selectedPokemon.baseStats[5] }}
+											{{ selectedPokemon.baseStats[5] }}
 										</div>
 									</div>
 								</div>
@@ -213,11 +214,16 @@
 	<script src="bower_components/angular-route/angular-route.min.js"></script>
 	<script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
 
+	<script src="bower_components/react/react.min.js"></script>
+	<script src="bower_components/react/JSXTransformer.js"></script>
+	<!-- ReactJS files -->
+	<!-- AngularJS files -->
 	<script src="scripts/app.js"></script>
 	<script src="scripts/factories.js"></script>
 	<script src="scripts/filters.js"></script>
 	<script src="scripts/services.js"></script>
 	<script src="scripts/directives.js"></script>
 	<script src="scripts/controllers.js"></script>
+
 </body>
 </html>
