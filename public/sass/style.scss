@@ -1,4 +1,8 @@
 @import 'compass';
+@import 'types';
+
+$padding: 15px;
+$sidebar-width: 450px;
 
 .cf {
 	&:before, &:after {
@@ -35,15 +39,15 @@ body {
 
 #sidebar {
 	@extend .cf;
-	width: 300px;
+	width: $sidebar-width;
 	float: left;
 	background-color: #FAFAFA;
 	position: relative;
 	.nav {
-		margin-bottom: 15px;
+		margin-bottom: $padding;
 	}
 	.list-group {
-		margin: 15px;
+		margin: $padding;
 		height: 100%;
 		li {
 			cursor: pointer;
@@ -58,20 +62,39 @@ body {
 #pokemon-list {
 	height: 90%;
 	overflow: auto;
+
+	tr {
+		cursor: pointer;
+		&:hover {
+			background-color: #DDD;
+		}
+	}
+
+	td.pokemon-name {
+		position: relative;
+		.pki {
+			// position: absolute;
+			float: left;
+			position: relative;
+			top:-9px;
+			margin-bottom: -9px;
+			margin-right: 0.5em;
+		}
+	}
 }
 
 #search-area {
-	height: 10%;
-	padding: 15px;
+	height: 90px;
+	padding: $padding;
 }
 
 #pokemon-info {
-	padding: 15px;
+	padding: $padding;
 	@extend .cf;
 	float: left;
 	background-color: #DDD;
 	width: 100%;
-	padding-left: 315px;
-	margin-left: -300px;
+	padding-left: $sidebar-width + $padding;
+	margin-left: $sidebar-width * -1;
 	overflow: auto;
 }

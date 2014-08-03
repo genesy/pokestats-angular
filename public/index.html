@@ -24,22 +24,17 @@
 				</div>
 			</div>
 
-			<div id="pokemon-list">
-				<!-- <ul class="list-group">
-					<li class="list-group-item" pokemon ng-repeat="pokemon in pokemons | orderBy:'number' | filter:search">
-						<span class="badge pull-left"> {{ pokemon.number }} </span>
-
-					</li>
-				</ul> -->
+			<div id="pokemon-list" class="pokemon-list">
 				<table class="table">
-					<tr pokemon ng-repeat="pokemon in pokemons | orderBy:'number' | filter:search">
+					<tr pokemon ng-repeat="pokemon in pokemons | orderBy:'number' | filter:Pokestats.search.name">
 						<td>{{ pokemon.number }}</td>
-						<td>
+						<td class="pokemon-name">
 							<span class="name"> {{ pokemon.name }}</span>
 							<span class="pki n{{pokemon.number}} pull-left"></span>
 						</td>
 						<td>
-							<span class="type" ng-repeat="type in pokemon.types | orderBy:'type' "> {{ type }} </span>
+							<div class="pkmn-types btn-group tc{{pokemon.types.length}}" type="pokemon.types">
+							</div>
 						</td>
 					</tr>
 				</table>
@@ -216,7 +211,6 @@
 	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script src="bower_components/angularjs/angular.min.js"></script>
 	<script src="bower_components/angular-route/angular-route.min.js"></script>
-	<script src="bower_components/angular-socket-io/socket.min.js"></script>
 	<script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
 
 	<script src="scripts/app.js"></script>

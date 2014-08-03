@@ -7,7 +7,6 @@ function PokemonCtrl($scope, $http, socket, $window){
 	$scope.moves = '';
 	$scope.ability = '';
 	$scope.selectedPokemon =[];
-	console.log($window);
 	$scope.types = [
 		"Normal",
 		"Fire",
@@ -41,12 +40,12 @@ function PokemonCtrl($scope, $http, socket, $window){
 
 	socket.on("get_all_pokemons", function( data ) {
 		for (var property in data) {
-				var prop = data[property];
-				$scope.pokemons.push(JSON.parse(prop));
-				prop = JSON.parse(prop);
-				if(prop.number==1) {
-					$scope.selectPokemon(prop);
-				}
+			var prop = data[property];
+			$scope.pokemons.push(JSON.parse(prop));
+			prop = JSON.parse(prop);
+			if(prop.number==1) {
+				$scope.selectPokemon(prop);
+			}
 		}
 	})
 }
