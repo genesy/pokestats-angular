@@ -50,7 +50,7 @@
 					<div class="jumbotron">
 
 						<h1 class="h1">
-							<img src="img/sprites/m/{{ selectedPokemon.number }}.png" alt="{{ selectedPokemon.name }}">{{ selectedPokemon.name }}
+							<img ng-src="{{ selectedPokemon.spriteUrl }} " alt="{{ selectedPokemon.name }}">{{ selectedPokemon.name }}
 						</h1>
 					</div>
 				</div>
@@ -205,17 +205,13 @@
 
 	<script src="socket.io/socket.io.js"></script>
 
-	<script src="http://127.0.0.1:1337/livereload.js"></script>
 
 
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script src="bower_components/angularjs/angular.min.js"></script>
 	<script src="bower_components/angular-route/angular-route.min.js"></script>
-	<script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
 
-	<script src="bower_components/react/react.min.js"></script>
-	<script src="bower_components/react/JSXTransformer.js"></script>
 	<!-- ReactJS files -->
 	<!-- AngularJS files -->
 	<script src="scripts/app.js"></script>

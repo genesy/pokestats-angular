@@ -36,6 +36,17 @@ function PokemonCtrl($scope, $http, socket, $window){
 	socket.on("returnPokemon", function( data ){
 		data = JSON.parse(data);
 		$scope.selectedPokemon = data;
+		console.log(data);
+		$scope.selectedPokemon.spriteUrl =  "img/sprites/m/" + $scope.selectedPokemon.number + ".png";
+		if($scope.selectedPokemon.name.match(/^Mega /)) {
+			$scope.selectedPokemon.isMega = 1;
+			var xyurl = $scope.selectedPokemon.identifier
+				.replace("-mega","")
+				.replace("-x","x")
+				.replace("-y","y");
+			$scope.selectedPokemon.spriteUrl =  "img/sprites/mega/" + xyurl + ".png";
+		}
+		console.log($scope.selectedPokemon);
 	});
 
 	socket.on("get_all_pokemons", function( data ) {

@@ -25,11 +25,18 @@ io.on("connection", function(socket) {
 
 	socket.on("getPokemon", function( data ) {
 		isMega = "";
+		xy = "";
 		if(data.isMega) {
 			isMega = ":mega"
+			var xy = data.identifier.match(/-[x|y]$/);
+			if(xy) {
+				xy = xy[0]
+			} else {
+				xy = "";
+			}
 		}
 
-		client.get("pokemon:"+ data.number + isMega, function ( err, data ) {
+		client.get("pokemon:"+ data.number + isMega + xy, function ( err, data ) {
 			socket.emit("returnPokemon", data);
 		})
 	})

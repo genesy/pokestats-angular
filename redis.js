@@ -12,13 +12,18 @@ fs.readFile(pokemon, 'utf8', function(err, data) {
 	}
 
 	data = JSON.parse(data);
-
 	data.forEach(function(a, b, c) {
 		if( !a.name.match(/^Mega /) ) {
 			client.set("pokemon:"+ a.number, JSON.stringify(a))
-			console.log("stored pokemon:%s", a.number)
+			// console.log("stored pokemon:%s", a.number)
 		} else {
-			client.set("pokemon:"+ a.number +":mega", JSON.stringify(a))
+			var xy = a.identifier.match(/-[x|y]$/);
+			if(!xy) {
+				xy = "";
+			} else {
+				xy = xy[0];
+			}
+			client.set("pokemon:"+ a.number +":mega"+xy, JSON.stringify(a))
 			console.log("stored pokemon:%s:mega", a.number)
 		}
 	})
@@ -33,7 +38,8 @@ fs.readFile(pokemon, 'utf8', function(err, data) {
 			name: a.name,
 			number: a.number,
 			isMega: isMega,
-			types: a.types
+			types: a.types,
+			identifier: a.identifier
 		}))
 
 		client.hgetall("pokemons", function( err, data ) {
@@ -43,4 +49,5 @@ fs.readFile(pokemon, 'utf8', function(err, data) {
 			}
 		})
 	})
+	console.log('done');
 })

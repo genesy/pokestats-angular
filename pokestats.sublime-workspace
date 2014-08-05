@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"u",
+				"underscore-min.js"
+			],
+			[
+				"ng",
+				"ngReact.min.js"
+			],
+			[
+				"a",
+				"angular-bootstrap/"
+			],
+			[
 				"Poek",
 				"PokemonCtrl"
 			],
@@ -40,34 +52,42 @@
 	"buffers":
 	[
 		{
-			"file": "public/index.html",
-			"settings":
-			{
-				"buffer_size": 6229,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Gulpfile.js",
-			"settings":
-			{
-				"buffer_size": 473,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": ".gitignore",
-			"settings":
-			{
-				"buffer_size": 59,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "public/sass/style.scss",
 			"settings":
 			{
-				"buffer_size": 56,
+				"buffer_size": 1258,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "public/scripts/directives.js",
+			"settings":
+			{
+				"buffer_size": 1321,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "server.js",
+			"settings":
+			{
+				"buffer_size": 822,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "public/bower_components/jquery/src/core.js",
+			"settings":
+			{
+				"buffer_size": 11667,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<table class=\"table\">\n\n	<tr pokemon ng-repeat=\"pokemon in pokemons | orderBy:'number'\" ng-hide=\"pokemon.name.indexOf(Pokestats.search.name) && Pokestats.search.name.length > 0\">\n		<td>{{ pokemon.number }}</td>\n		<td class=\"pokemon-name\">\n			<span class=\"name\"> {{ pokemon.name }}</span>\n			<span class=\"pki n{{pokemon.number}} pull-left\"></span>\n		</td>\n		<td>\n			<div class=\"pkmn-types btn-group tc{{pokemon.types.length}}\" type=\"pokemon.types\">\n			</div>\n		</td>\n	</tr>\n</table>",
+			"settings":
+			{
+				"buffer_size": 480,
 				"line_ending": "Windows"
 			}
 		},
@@ -75,8 +95,16 @@
 			"file": "bower.json",
 			"settings":
 			{
-				"buffer_size": 458,
-				"line_ending": "Unix"
+				"buffer_size": 517,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "public/index.html",
+			"settings":
+			{
+				"buffer_size": 6516,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -87,28 +115,80 @@
 		"selected_items":
 		[
 			[
-				"dele",
-				"File: Delete"
+				"reind",
+				"Indentation: Reindent Lines"
 			],
 			[
-				"new file",
-				"File: New File Relative to Current View"
+				"rein",
+				"Indentation: Reindent Lines"
 			],
 			[
-				"rename",
-				"File: Rename"
+				"refr",
+				"Project: Refresh Folders"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
 			],
 			[
 				"reinde",
 				"Indentation: Reindent Lines"
 			],
 			[
-				"reind",
+				"rei",
 				"Indentation: Reindent Lines"
+			],
+			[
+				"refre",
+				"Project: Refresh Folders"
+			],
+			[
+				"refresh",
+				"Side Bar: Refresh"
+			],
+			[
+				"refres",
+				"Project: Refresh Folders"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"reindent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"word",
+				"Word Wrap: Toggle"
+			],
+			[
+				"rename",
+				"File: Rename"
+			],
+			[
+				"word wra",
+				"Word Wrap: Toggle"
+			],
+			[
+				"html",
+				"HTML: Wrap Selection With Tag"
+			],
+			[
+				"co tab",
+				"Indentation: Convert to Tabs"
 			],
 			[
 				"conv tab",
 				"Indentation: Convert to Tabs"
+			],
+			[
+				"dele",
+				"File: Delete"
+			],
+			[
+				"new file",
+				"File: New File Relative to Current View"
 			],
 			[
 				"move",
@@ -133,10 +213,6 @@
 			[
 				"new file ",
 				"File: New File Relative to Current View"
-			],
-			[
-				"reindent",
-				"Indentation: Reindent Lines"
 			],
 			[
 				"indent",
@@ -165,10 +241,6 @@
 			[
 				"user",
 				"Preferences: Settings - User"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
 			],
 			[
 				"remove ",
@@ -310,6 +382,7 @@
 		"height": 126.0,
 		"history":
 		[
+			"bower",
 			"git",
 			"git pull origin master",
 			"git status",
@@ -329,6 +402,39 @@
 	},
 	"file_history":
 	[
+		"/D/web/pokestatsv2/public/bower_components/ngReact/demos/complicated-react.html",
+		"/D/web/pokestatsv2/public/scripts/controllers.js",
+		"/D/web/pokestatsv2/node_modules/express/History.md",
+		"/D/web/pokestatsv2/node_modules/express.io/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/tests/test-headers.js",
+		"/D/web/pokestatsv2/node_modules/gulp/node_modules/semver/head.js",
+		"/D/web/pokestatsv2/public/scripts/factories.js",
+		"/D/web/pokestatsv2/public/index.html",
+		"/D/web/pokestatsv2/public/scripts/app.js",
+		"/D/web/pokestatsv2/server.js",
+		"/D/web/pokestatsv2/public/sass/_types.scss",
+		"/D/web/pokestatsv2/public/css/style.css",
+		"/D/web/pokestatsv2/public/css/pkmn-icons.css",
+		"/D/web/pokestatsv2/public/data/pokemon.json",
+		"/D/web/pokestatsv2/.bowerrc",
+		"/D/web/pokestatsv2/public/css/types.css",
+		"/D/web/pokestatsv2/public/bower_components/bootstrap/less/type.less",
+		"/D/web/pokestatsv2/node_modules/express/test.js",
+		"/D/web/pokestatsv2/node_modules/express.io/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/KeyExchanges.as",
+		"/D/web/pokestatsv2/pokestats.sublime-project",
+		"/D/web/pokestatsv2/node_modules/gulp/node_modules/liftoff/lib/parse_options.js",
+		"/D/web/pokestatsv2/package.json",
+		"/D/web/pokestatsv2/node_modules/express.io/node_modules/socket.io/lib/transports/htmlfile.js",
+		"/D/web/pokestatsv2/public/bower_components/bootstrap/less/mixins/hide-text.less",
+		"/D/web/pokestatsv2/.gitignore",
+		"/D/web/pokestatsv2/public/scripts/directives.js",
+		"/D/web/pokestatsv2/redis.js",
+		"/D/web/pokestatsv2/Gulpfile.js",
+		"/D/web/pokestatsv2/public/sass/style.scss",
+		"/D/web/pokestatsv2/node_modules/express/lib/utils.js",
+		"/D/web/pokestatsv2/public/bower_components/angular-bootstrap/ui-bootstrap.js",
+		"/D/web/pokestatsv2/bower.json",
+		"/D/web/pokestatsv2/public/bower_components/bootstrap/less/responsive-embed.less",
+		"/D/web/pokestatsv2/README.md",
 		"/D/My Projects/pokestatsv2/.gitignore~",
 		"/D/My Projects/pokestatsv2/node_modules/gulp-sass/node_modules/node-sass/node_modules/mocha/node_modules/jade/lib/inline-tags.js",
 		"/D/My Projects/pokestatsv2/public/bower_components/jquery/src/css/addGetHookIf.js",
@@ -423,50 +529,19 @@
 		"/D/My Projects/mrs/app/start/local.php",
 		"/D/My Projects/mrs/app/controllers/LoginController.php",
 		"/D/My Projects/mrs/app/routing/user.php",
-		"/D/My Projects/mrs/app/routing/user-employee.php",
-		"/D/My Projects/mrs/app/routing/user-serviceprovider.php",
-		"/D/mrs-node/main.js",
-		"/D/mrs/app/config/database.php",
-		"/D/mrs/db/deploy.bat",
-		"/D/mrs/app/models/CompanyAccount.php",
-		"/D/mrs/public/js/core.js",
-		"/D/mrs/app/lang/en/reminders.php",
-		"/D/mrs/public/js/jqueryui-editable.min.js",
-		"/D/mrs/readme.md",
-		"/D/mrs/app/config/cache.php",
-		"/D/mrs/app/config/local/gene/app.php",
-		"/D/mrs/public/js/user/password-gen.js",
-		"/D/mrs/app/views/signup/manager.blade.php",
-		"/D/mrs/public/sass/_global.scss",
-		"/D/mrs/app/config/packages/aws/aws-sdk-php-laravel/config.php",
-		"/D/mrs/config.rb",
-		"/D/mrs/app/start/global.php",
-		"/D/mrs/Gulpfile.js",
-		"/D/mrs/bootstrap/start.php",
-		"/D/mrs/server.php",
-		"/D/mrs/public/js/notifications.js",
-		"/D/mrs/public/js/chat.js.bak.js",
-		"/D/mrs/public/sass/_chatbar.scss",
-		"/D/mrs/app/views/admin/assignedLocation/listing.blade.php",
-		"/D/mrs/app/views/layout/base2.blade.php",
-		"/D/mrs/public/js/chat.js",
-		"/D/mrs/app/views/user/index.blade.php",
-		"/D/mrs/app/views/layout/topbar/company-logo.blade.php",
-		"/D/mrs/public/sass/_header.scss",
-		"/D/mrs/public/sass/bootstrap/_thumbnails.scss",
-		"/D/mrs/public/sass/bootstrap/_tooltip.scss",
-		"/D/mrs/public/sass/bootstrap/_tables.scss",
-		"/D/mrs/public/sass/bootstrap/_theme.scss"
+		"/D/My Projects/mrs/app/routing/user-employee.php"
 	],
 	"find":
 	{
-		"height": 46.0
+		"height": 41.0
 	},
 	"find_in_files":
 	{
 		"height": 407.0,
 		"where_history":
 		[
+			"scripts/*.js",
+			"*.js",
 			"*.css",
 			"*.scss",
 			"",
@@ -483,6 +558,77 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"dropdow",
+			"table",
+			"show",
+			"rows",
+			"pokemons",
+			"data",
+			"scope",
+			"$window",
+			"window",
+			"SidebarTR",
+			"ngReact",
+			"PokemonTR",
+			"show",
+			"15px",
+			"newtype",
+			"length",
+			"number",
+			"type",
+			"darken",
+			".type",
+			".type-g",
+			".type-",
+			"pkmn-type",
+			"pkmn-ty",
+			"types\": [16",
+			"types\": [15",
+			"types\": [14",
+			"types\": [13",
+			"elect",
+			"types\": [12",
+			"types\": [10",
+			"types\": [7",
+			"types\": [6",
+			"6],",
+			"types\": [6",
+			"types\": [1",
+			"charmander",
+			"chatmanger",
+			"type",
+			"scope",
+			"div",
+			"element",
+			"type",
+			"elem",
+			"div",
+			"aa",
+			"typeId",
+			"type",
+			"theType",
+			"get_all_",
+			"type",
+			"pokemonTypes",
+			"Pokestat",
+			"scope",
+			"iAttrs",
+			"factories",
+			"pokemonTypes",
+			"pokemonTyppokemonTypeses",
+			"scope",
+			"type",
+			"ul",
+			"Moves",
+			"pokemons",
+			"Pokemons",
+			"cf",
+			"cs",
+			".cf",
+			"cf",
+			"cs",
+			"sidebar",
+			"compass",
 			"stylesheets",
 			"src",
 			"directory",
@@ -539,80 +685,9 @@
 			"getChat",
 			"updatechat",
 			"getChat",
-			"getchat",
-			"Rooms",
-			"userArray",
-			"console.log",
-			"96",
-			"getChat(",
-			"getChat",
-			"getChat(",
-			"users",
-			"getChat",
-			"socket",
-			"room",
-			"socket",
-			"room",
-			"socket",
-			"sendmessage",
-			"data",
-			"User.id.toString()",
-			"userArray",
-			"data",
-			"list",
-			"online",
-			"redis-cli",
-			"redis",
-			"'",
-			"data",
-			"\\\n",
-			"\\n",
-			"\\t",
-			"10000",
-			"forea",
-			"debug",
-			"var",
-			"6379,'192.168.11.47')",
-			"--",
-			"192",
-			"redis",
-			"127.0.0.1",
-			"redis",
-			"info",
-			"message",
-			"sendMessage",
-			"client",
-			"redis.createClient(6379,'192.168.11.47')",
-			"--",
-			"io",
-			" redis.createClient();",
-			"$scope",
-			"chatBox",
-			"from",
-			".row",
-			"Name",
-			".company-logo-main",
-			"script",
-			"this",
-			"room",
-			"ds",
-			"http://localhost:3000",
-			"http://localhost:3000/",
-			"http://localhost:3000",
-			"con",
-			"black",
-			"github",
-			"wa",
-			"var User",
-			"show",
-			"top",
-			"25px",
-			"show",
-			"25px",
-			"span",
-			"div"
+			"getchat"
 		],
-		"highlight": true,
+		"highlight": false,
 		"in_selection": false,
 		"preserve_case": false,
 		"regex": false,
@@ -642,24 +717,140 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "public/index.html",
+					"file": "public/sass/style.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6229,
+						"buffer_size": 1258,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								318,
-								318
+								48,
+								47
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1937.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "public/scripts/directives.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1321,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								592,
+								592
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "server.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 822,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								397,
+								397
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "public/bower_components/jquery/src/core.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11667,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 480,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								480,
+								480
 							]
 						],
 						"settings":
@@ -671,122 +862,72 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "Gulpfile.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 473,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								46,
-								46
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": ".gitignore",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 59,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								59,
-								59
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "public/sass/style.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 56,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								10,
-								10
-							]
-						],
-						"settings":
-						{
-							"open_with_edit": true,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
+					"buffer": 5,
 					"file": "bower.json",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 458,
+						"buffer_size": 517,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								143,
-								143
+								105,
+								105
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/JavaScript/JSON.tmLanguage",
 							"tab_size": 2,
-							"translate_tabs_to_spaces": false
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 5,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 6,
+					"file": "public/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6516,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6417,
+								6417
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3006.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -794,7 +935,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 36.0
+		"height": 31.0
 	},
 	"input":
 	{
@@ -809,11 +950,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -842,7 +990,7 @@
 	"project": "pokestats.sublime-project",
 	"replace":
 	{
-		"height": 68.0
+		"height": 58.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -851,20 +999,96 @@
 		"selected_items":
 		[
 			[
-				"giti",
-				".gitignore~"
+				"core.js",
+				"public\\bower_components\\jquery\\src\\core.js"
+			],
+			[
+				"server",
+				"server.js"
+			],
+			[
+				"ind",
+				"public\\index.html"
+			],
+			[
+				"controllers",
+				"public\\scripts\\controllers.js"
+			],
+			[
+				"app.",
+				"public\\scripts\\app.js"
+			],
+			[
+				"style",
+				"public\\css\\style.css"
+			],
+			[
+				"type.css",
+				"public\\css\\types.css"
 			],
 			[
 				"style.css",
 				"public\\css\\style.css"
 			],
 			[
-				"bower",
-				"public\\bower.json"
+				"tyep",
+				"public\\sass\\types.scss"
+			],
+			[
+				"pokemon",
+				"public\\data\\pokemon.json"
+			],
+			[
+				"fac",
+				"public\\scripts\\factories.js"
+			],
+			[
+				"ser",
+				"server.js"
+			],
+			[
+				"style.scss",
+				"public\\sass\\style.scss"
+			],
+			[
+				"fact",
+				"public\\scripts\\factories.js"
+			],
+			[
+				"contr",
+				"public\\scripts\\controllers.js"
 			],
 			[
 				"inde",
 				"public\\index.html"
+			],
+			[
+				"dire",
+				"public\\scripts\\directives.js"
+			],
+			[
+				"app.js",
+				"public\\scripts\\app.js"
+			],
+			[
+				"directive",
+				"public\\scripts\\directives.js"
+			],
+			[
+				"redis",
+				"redis.js"
+			],
+			[
+				"bower.jso",
+				"bower.json"
+			],
+			[
+				"giti",
+				".gitignore~"
+			],
+			[
+				"bower",
+				"public\\bower.json"
 			],
 			[
 				"cont",
@@ -873,14 +1097,6 @@
 			[
 				"scoket.js",
 				"public\\bower_components\\angular-socket-io\\socket.js"
-			],
-			[
-				"fac",
-				"public\\scripts\\factories.js"
-			],
-			[
-				"app.js",
-				"public\\scripts\\app.js"
 			],
 			[
 				"app",
@@ -921,10 +1137,6 @@
 			[
 				"list.blade.php",
 				"mrs\\app\\views\\pages\\admin\\company\\list.blade.php"
-			],
-			[
-				"core.js",
-				"mrs\\public\\js\\core.js"
 			],
 			[
 				"companyviewb",
@@ -1037,10 +1249,6 @@
 			[
 				"global.scs",
 				"mrs\\public\\sass\\_global.scss"
-			],
-			[
-				"style",
-				"mrs\\public\\sass\\style.scss"
 			],
 			[
 				"chatjs",
@@ -1165,10 +1373,6 @@
 			[
 				"base2.",
 				"app\\views\\layout\\base2.blade.php"
-			],
-			[
-				"style.scss",
-				"public\\sass\\style.scss"
 			],
 			[
 				"chat",
@@ -1305,62 +1509,6 @@
 			[
 				"paginationscss",
 				"public\\sass\\bootstrap\\_pagination.scss"
-			],
-			[
-				"login",
-				"app\\views\\layout\\topbar\\login-form.blade.php"
-			],
-			[
-				"global.scss",
-				"public\\sass\\_global.scss"
-			],
-			[
-				"bootblade",
-				"app\\views\\bootstrap.blade.php"
-			],
-			[
-				"mobile.scss",
-				"public\\sass\\_mobile.scss"
-			],
-			[
-				"base2.scss",
-				"public\\sass\\_base2.scss"
-			],
-			[
-				"buttons",
-				"public\\sass\\bootstrap\\_buttons.scss"
-			],
-			[
-				"bootstrap",
-				"public\\sass\\bootstrap.scss"
-			],
-			[
-				"bootstrapblade",
-				"app\\views\\bootstrap.blade.php"
-			],
-			[
-				"list.blade",
-				"app\\views\\pages\\admin\\company\\list.blade.php"
-			],
-			[
-				"",
-				"public\\sass\\bootstrap\\_buttons.scss"
-			],
-			[
-				"bootstrapscss",
-				"public\\sass\\_bootstrap-mrs.scss"
-			],
-			[
-				".htm",
-				"app\\views\\bootstrap.blade.php.htm"
-			],
-			[
-				"formelemen",
-				"public\\sass\\_form-elements.scss"
-			],
-			[
-				"homec",
-				"app\\controllers\\HomeController.php"
 			]
 		],
 		"width": 0.0
@@ -1399,7 +1547,7 @@
 	"show_minimap": false,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 359.0,
 	"status_bar_visible": true,
 	"template_settings":

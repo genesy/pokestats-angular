@@ -5,6 +5,7 @@ angular.module('Pokestats.directives', ['Pokestats.factories'])
 		scope: true,
 		link: function(scope, iElm, iAttrs, controller) {
 			iElm.on('click', function() {
+				console.log(scope.pokemon);
 				scope.selectPokemon(scope.pokemon);
 			})
 		}
