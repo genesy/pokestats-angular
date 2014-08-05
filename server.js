@@ -4,7 +4,7 @@ var server = require('http').createServer(app);
 var io = require('socket.io')();
 io.listen(server);
 var redis = require('redis');
-server.listen(8080);
+server.listen(8080 || 24268);
 app.use(express.static(__dirname + '/public'));
 app.get('/', function( req, res ) {
 	res.render('index.html');
