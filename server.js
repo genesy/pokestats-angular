@@ -8,8 +8,21 @@ var redis = require('redis');
 
 io.listen(server);
 
-server.listen(8080 || 24268);
+var prod = {
+	server: 24268,
+	redis: 18267
+}
 
+var local = {
+	server:8080,
+	redis:6379
+}
+
+
+var port = local;
+// var port = prod;
+
+server.listen(port.server)
 
 
 app.set('views', __dirname + '/views')
@@ -28,7 +41,7 @@ app.get('/partials/:name', function(req, res) {
 	res.render('partials/' + name)
 })
 
-var client = redis.createClient();
+var client = redis.createClient(port.redis);
 
 
 io.on("connection", function(socket) {
