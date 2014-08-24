@@ -19,6 +19,9 @@ body(ng-app='Pokestats', ng-controller='PokemonCtrl as Pokestats')
 					ng-model='Pokestats.searchText',
 					ng-change='Pokestats.search()'
 				)
+		.navbar-right
+			.navbar-header
+				a.navbar-brand(href='http://genesy.me') Made by Gene Sy
 	#main
 		include partials/sidebar
 		#content(ng-view)
