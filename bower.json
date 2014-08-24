@@ -22,6 +22,10 @@
     "angular-mocks": "~1.2.21",
     "angular-route": "~1.2.21",
     "angular-bootstrap": "~0.11.0",
-    "react": "~0.11.1"
+    "react": "~0.11.1",
+    "underscore": "~1.6.0"
+  },
+  "resolutions": {
+    "underscore": "~1.6.0"
   }
 }

@@ -1,0 +1,81 @@
+#pokemon-info
+	.row
+		.col-md-12
+			.jumbotron
+				h1.h1
+					img(ng-src='{{ selectedPokemon.spriteUrl }} ', alt='{{ selectedPokemon.name }}')
+					| {{ selectedPokemon.name }}
+	.row
+		.col-md-4
+			.panel.panel-default
+				.panel-heading
+					| Base Stats
+					.row
+						.col-md-3
+							strong HP
+						.col-md-9
+							.progress
+								.progress-bar.progress-bar-success
+									| {{ selectedPokemon.baseStats[0] }}
+					.row
+						.col-md-3
+							strong Atk
+						.col-md-9
+							.progress
+								.progress-bar.progress-bar-success
+									| {{ selectedPokemon.baseStats[1] }}
+					.row
+						.col-md-3
+							strong Def
+						.col-md-9
+							.progress
+								.progress-bar.progress-bar-success
+									| {{ selectedPokemon.baseStats[2] }}
+					.row
+						.col-md-3
+							strong Sp.Atk
+						.col-md-9
+							.progress
+								.progress-bar.progress-bar-success
+									| {{ selectedPokemon.baseStats[3] }}
+					.row
+						.col-md-3
+							strong Sp.Def
+						.col-md-9
+							.progress
+								.progress-bar.progress-bar-success
+									| {{ selectedPokemon.baseStats[4] }}
+					.row
+						.col-md-3
+							strong Spd
+						.col-md-9
+							.progress
+								.progress-bar.progress-bar-success
+									| {{ selectedPokemon.baseStats[5] }}
+		.col-md-4
+			.panel.panel-default
+				.panel-heading
+					| Learned Moves
+				.panel-body
+					.row
+						.col-md-12
+							table.table
+								thead
+									tr
+										th Level
+										th Name
+								tbody
+									tr(ng-repeat='move in selectedPokemon.learnedMoves track by $index')
+										td
+											| {{ move.slice(move.indexOf('(')+1, move.indexOf(')')) }}
+										td {{ move.slice(0, move.indexOf('(')) }}
+		.col-md-4
+			.panel.panel-default
+				.panel-heading
+					| Abilities
+				.panel-body
+					.row
+						.col-md-12
+							ul.list-group
+								li.list-group-item(ng-repeat='ability in selectedPokemon.abilities')
+									| {{ ability }}

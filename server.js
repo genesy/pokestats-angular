@@ -1,15 +1,32 @@
 var express = require('express');
+
 var app = express();
 var server = require('http').createServer(app);
+
 var io = require('socket.io')();
-io.listen(server);
 var redis = require('redis');
+
+io.listen(server);
+
 server.listen(8080 || 24268);
+
+
+
+app.set('views', __dirname + '/views')
+app.set('view engine', 'jade')
 app.use(express.static(__dirname + '/public'));
-app.get('/', function( req, res ) {
-	res.render('index.html');
+
+
+app.get('/', function (req, res) {
+	res.render('index',
+	{ title : 'Home' }
+	)
 })
 
+app.get('/partials/:name', function(req, res) {
+	var name = req.params.name;
+	res.render('partials/' + name)
+})
 
 var client = redis.createClient();
 

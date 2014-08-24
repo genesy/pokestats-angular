@@ -3,6 +3,9 @@ angular.module('Pokestats.factories', [])
 .factory('io', function ($rootScope) {
 	return io;
 })
+.factory('_', function() {
+  return window._; // assumes underscore has already been loaded on the page
+})
 // .factory('getType', ['$rootScope', '$scope', function($rootScope, $scope){
 // 	return function name(){
 

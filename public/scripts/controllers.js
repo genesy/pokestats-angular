@@ -1,8 +1,8 @@
 'use strict';
-angular.module('Pokestats.controllers', ['Pokestats.factories'])
+angular.module('Pokestats.controllers', [])
 .controller('PokemonCtrl', PokemonCtrl);
-PokemonCtrl.$inject = ['$scope','$http', 'socket', '$window'];
-function PokemonCtrl($scope, $http, socket, $window){
+PokemonCtrl.$inject = ['$scope','$http', 'socket', '$window', '$routeParams', '$location'];
+function PokemonCtrl($scope, $http, socket, $window, $routeParams, $location){
 	$scope.pokemons = [];
 	$scope.moves = '';
 	$scope.ability = '';
@@ -28,8 +28,11 @@ function PokemonCtrl($scope, $http, socket, $window){
 		"Fairy"
 	];
 
-
+	// if($routeParams.pokemonNumber) {
+	// 	$scope.selectPokemon()
+	// }
 	$scope.selectPokemon = function(pokemon) {
+		$location.path('/pokemon/' + pokemon.number)
 		socket.emit("getPokemon", pokemon)
 	}
 
@@ -54,7 +57,10 @@ function PokemonCtrl($scope, $http, socket, $window){
 			var prop = data[property];
 			$scope.pokemons.push(JSON.parse(prop));
 			prop = JSON.parse(prop);
-			if(prop.number==1) {
+			if(prop.number == $routeParams.pokemonNumber) {
+				$scope.selectPokemon(prop);
+			}
+			if(prop.number==1 && !$routeParams.pokemonNumber) {
 				$scope.selectPokemon(prop);
 			}
 		}

@@ -1,6 +1,7 @@
 var redis = require('redis');
 var fs = require('fs');
-client = redis.createClient(6379 || 18267);
+// client = redis.createClient(6379 || 18267);
+client = redis.createClient();
 
 
 var pokemon = __dirname + '/public/data/pokemon.json';

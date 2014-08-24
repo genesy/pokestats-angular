@@ -1,21 +1,24 @@
-var compass 	= require('gulp-compass');
 var livereload 	= require('gulp-livereload');
+var prefix		= require('gulp-autoprefixer');
+var sass 		= require('gulp-sass');
+var plumber 		= require('gulp-plumber');
 var gulp 		= require('gulp');
-var folder 		= './public/';
+var assets 		= './public/';
+var lr = 1337;
 
-gulp.task('compass', function() {
-	gulp.src( folder + 'sass/*.scss' )
-	.pipe(compass({
-		config_file: './config.rb',
-		css: folder + 'css',
-		sass: folder + 'sass'
-	}))
-	.pipe(livereload(1337))
+
+gulp.task('sass', function() {
+	gulp.src( './sass/*.scss' )
+	.pipe(plumber())
+	.pipe(sass())
+	.pipe(prefix())
+	.pipe(gulp.dest( assets + 'css'))
+	.pipe(livereload(lr))
 });
 
 gulp.task('watch', function() {
-	gulp.watch(folder + 'sass/**/*.scss', ['compass']);
+	gulp.watch('./sass/**/*.scss', ['sass']);
 })
 
 
-gulp.task('default', ['compass','watch']);
+gulp.task('default', ['sass','watch']);

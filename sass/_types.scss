@@ -24,7 +24,7 @@ $types: $normal, $fire, $water, $electric, $grass, $ice, $fighting, $poison, $gr
     $name: nth($type, 1);
     $value: nth($type, 2);
     .pkmn-type.type-#{$name} { background-color: $value;
-    	@include transition(background-color 0.1s ease-in-out);
+    	transition:background-color 0.1s ease-in-out;
     	&:hover {
 			background-color: lighten($value,10%)
     	}}
@@ -37,7 +37,7 @@ $types: $normal, $fire, $water, $electric, $grass, $ice, $fighting, $poison, $gr
 		width: 100%;
 	}
 	span {
-		@include text-shadow(#000 1px 1px 1px);
+		text-shadow:#000 1px 1px 1px;
 		text-decoration: none;
 		font-size:12px;
 		color:white;

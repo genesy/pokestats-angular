@@ -1,0 +1,34 @@
+html(lang='en')
+head
+	meta(charset='UTF-8')
+	title Pokestats V2
+	link(rel='stylesheet', href='bower_components/bootstrap/dist/css/bootstrap.css')
+	link(rel='stylesheet', href='css/pkmn-icons.css')
+	link(rel='stylesheet', href='css/style.css')
+body(ng-app='Pokestats', ng-controller='PokemonCtrl as Pokestats')
+	.navbar.navbar-inverse.navbar-fixed-top(role='navigation')
+		.navbar-header
+			a.navbar-brand(href='#') Pokestats V2
+		form.navbar-form.navbar-left(role='search')
+			.form-group
+				input.form-control(type='text', placeholder='Search for Pokemon', ng-model='Pokestats.search.name')
+	#main
+		include partials/sidebar
+		.view-animate(ng-view)
+	script(src='socket.io/socket.io.js')
+	script(src='bower_components/jquery/dist/jquery.min.js')
+	script(src='bower_components/bootstrap/dist/js/bootstrap.min.js')
+	script(src='bower_components/angularjs/angular.min.js')
+	script(src='bower_components/angular-route/angular-route.min.js')
+	script(src='bower_components/underscore/underscore.js')
+	//
+		 ReactJS files 
+	//
+		 AngularJS files 
+	script(src='scripts/app.js')
+	script(src='scripts/factories.js')
+	script(src='scripts/filters.js')
+	script(src='scripts/services.js')
+	script(src='scripts/directives.js')
+	script(src='scripts/controllers.js')
+	script(src='scripts/config.js')
