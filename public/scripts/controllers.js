@@ -28,11 +28,11 @@ function PokemonCtrl($scope, $http, socket, $window, $routeParams, $location){
 		"Fairy"
 	];
 
-	// if($routeParams.pokemonNumber) {
-	// 	$scope.selectPokemon()
-	// }
+	$scope.search = function() {
+		
+	}
 	$scope.selectPokemon = function(pokemon) {
-		$location.path('/pokemon/' + pokemon.number)
+		$location.path('/pokemon/' + pokemon.identifier)
 		socket.emit("getPokemon", pokemon)
 	}
 
@@ -54,13 +54,9 @@ function PokemonCtrl($scope, $http, socket, $window, $routeParams, $location){
 
 	socket.on("get_all_pokemons", function( data ) {
 		for (var property in data) {
-			var prop = data[property];
-			$scope.pokemons.push(JSON.parse(prop));
-			prop = JSON.parse(prop);
-			if(prop.number == $routeParams.pokemonNumber) {
-				$scope.selectPokemon(prop);
-			}
-			if(prop.number==1 && !$routeParams.pokemonNumber) {
+			var prop = JSON.parse(data[property]);
+			$scope.pokemons.push(prop);
+			if(prop.identifier == $routeParams.pokemonIdentifier) {
 				$scope.selectPokemon(prop);
 			}
 		}

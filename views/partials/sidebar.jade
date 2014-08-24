@@ -1,10 +1,10 @@
 #sidebar
 	#pokemon-list.pokemon-list
 		table.table
-			tr(pokemon='pokemon', ng-repeat='pokemon in pokemons | orderBy:\'number\'', ng-hide="pokemon.name.indexOf(Pokestats.search.name) && Pokestats.search.name.length > 0")
+			tr(pokemon, ng-repeat='pokemon in pokemons | orderBy:\'number\'', ng-hide="pokemon.name.toLowerCase().indexOf(Pokestats.searchText.toLowerCase()) && Pokestats.searchText.length > 0")
 				td {{ pokemon.number }}
 				td.pokemon-name
 					span.name  {{ pokemon.name }}
 					span.pki.pull-left(ng-class='"n" + pokemon.number')
-				td
+				td.pokemon-type
 					.pkmn-types.btn-group(type='pokemon.types', ng-class='"tc"+pokemon.types.length')
